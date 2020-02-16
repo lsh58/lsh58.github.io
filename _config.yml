@@ -1,9 +1,9 @@
-title:            Kiwoong's Blog
-description:      "각종 정보 공유"
+title:            Lsh58 Blog
+description:      "Front-end Study"
 logo:             logo.png
-disqus_shortname: newhiwoong
-disqus_url : newhiwoong@gamil.com
-disqus_id : newhiwoong
+disqus_shortname: lsh58
+disqus_url : tmdgus508@naver.com
+disqus_id : lsh58
 share:            true
 dropcap:			true
 # Change url to your domain. Leave localhost server or blank when working locally.
@@ -12,26 +12,26 @@ dropcap:			true
 
 remote_theme : hmfaysal/Notepad
 
-url                      : "https://newhiwoong.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://lsh58.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 
 # Owner/author information
 owner:
-  name:           Kiwoong Yeom
-  avatar:         hmfaysal.jpg
-  email:          newhiwoong@gmail.com
+  name:           SeungHyun Lee
+  avatar:         lsh58.jpg
+  email:          tmdgus508@naver.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    A person longing for any dream for a long time  resembles that dream at last .
   # Social networking links used in footer. Update and remove as you like.
   #twitter:        hmfaysal
   #facebook:       hmfaysal
-  github:         newhiwoong      
+  github:         lsh58     
   #instagram:      hmfaysal
   # For Google Authorship https://plus.google.com/authorship
   #google_plus:    https://plus.google.com/u/0/102602916593522619858
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UUA-133319432-1
+google_analytics:   
 #google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
