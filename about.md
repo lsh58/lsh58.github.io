@@ -1,16 +1,11 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Kiwoong Yeom
-tags: [Kiwoong, Yeom, Newhiwoong]
-imagefeature: fourseasons.jpg
+title: SeungHyun Lee
+tags: [SeungHyun Lee]
+imagefeature:
 chart: true
 ---
-
-<figure>
-	<img src="{{ site.url }}/images/kywc.png" alt="자기소개서 워드클라우드">
-	<figcaption>자기소개서 워드클라우드</figcaption>
-</figure>
 
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
@@ -32,7 +27,7 @@ This is my personal blog. It currently has {{ site.posts | size }} posts in {{ s
 -->
 
 <h1 align="center">
-<a href="https://docs.google.com/document/d/11DnFBrE_r5tCZuRxd2VIXdHpr0vsuCGY4hm9i-_SjJ4/edit?usp=sharing"> LSH </a>  
+<a href=""> LSH </a>  
 </h1>
 
 <h2>Connect</h2>
