@@ -36,8 +36,8 @@ html, body, .notepad-post-container, .notepad-post-header {
 }
 
 .code{
-  background:#000;
-  color:#fff;
+  width: 900px;
+  margin: 0 auto;
 }
 
 
