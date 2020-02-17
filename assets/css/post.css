@@ -91,7 +91,7 @@ html, body, .notepad-post-container, .notepad-post-header {
       max-width: none; }
   .post-template .notepad-post-title {
     z-index: 1000;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 0 1.25em;
     text-align: center;
     position: absolute;
