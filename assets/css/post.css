@@ -35,6 +35,15 @@ html, body, .notepad-post-container, .notepad-post-header {
   font-weight: bold;
 }
 
+.code{
+  background:#000;
+  color:#fff;
+}
+
+
+
+
+
 .post-template {
   /* Header */
   /* based on http://tympanus.net/Development/ArticleIntroEffects/index3.html */
