@@ -1,9 +1,9 @@
 [
 	
 		{
-		  "title"      : "HTML_시맨틱태그",
+		  "title"      : "local에서 지킬 실행하기",
 		  "category"   : "webdevelopment",
-		  "url"        : "http://localhost:4000/webdevelopment/HTML_%EC%8B%9C%EB%A7%A8%ED%8B%B1%ED%83%9C%EA%B7%B8",
+		  "url"        : "http://localhost:4000/webdevelopment/local%EC%97%90%EC%84%9C-%EC%A7%80%ED%82%AC-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0",
 		  "date"       : "2020-02-18 00:00:00 +0000",
 		  "shortdate"  : "February 18, 2020"
 		} ,
@@ -60,6 +60,14 @@
 		  "title"      : "JS_EX01_색상바꾸기",
 		  "category"   : "webdevelopment",
 		  "url"        : "http://localhost:4000/webdevelopment/JS_ex01_%EC%83%89%EC%83%81%EB%B0%94%EA%BE%B8%EA%B8%B0",
+		  "date"       : "2020-02-17 00:00:00 +0000",
+		  "shortdate"  : "February 17, 2020"
+		} ,
+	
+		{
+		  "title"      : "HTML_시맨틱태그",
+		  "category"   : "webdevelopment",
+		  "url"        : "http://localhost:4000/webdevelopment/HTML_%EC%8B%9C%EB%A7%A8%ED%8B%B1%ED%83%9C%EA%B7%B8",
 		  "date"       : "2020-02-17 00:00:00 +0000",
 		  "shortdate"  : "February 17, 2020"
 		} 
