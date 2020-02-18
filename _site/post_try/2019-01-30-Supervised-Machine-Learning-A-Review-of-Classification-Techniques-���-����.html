@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<!--
+====================================================
+    __  ____  ______________  _______ ___    __ 
+   / / / /  |/  / ____/   \ \/ / ___//   |  / / 
+  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /  
+ / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
+/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
+                                                     
+====================================================
+Author: Hossain Mohammad Faysal
+Profile: https://www.facebook.com/hmfaysal
+Version: 1.0
+Description: Awesome dude, awesome life
+====================================================
+-->
+<head>
+<meta charset="utf-8">
+<title>SUPERVISED MACHINE LEARNING: A REVIEW OF CLASSIFICATION TECHNIQUES 논문 리뷰 &vert; LSH58 BLOG</title>
+<meta name="description" content="Front-end Study">
+<meta name="keywords" content="DNN, 논문 리뷰, Review, Classification, Supervised Machine">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Supervised Machine Learning: A Review of Classification Techniques 논문 리뷰">
+<meta property="og:description" content="Front-end Study">
+<meta property="og:url" content="http://localhost:4000/post_try/2019-01-30-Supervised-Machine-Learning-A-Review-of-Classification-Techniques-%B3%ED%B9%AE-%B8%AE%BA%E4">
+<meta property="og:site_name" content="Lsh58 Blog">
+<meta property="og:image" content="http://localhost:4000/images/cover3.jpg">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/post_try/2019-01-30-Supervised-Machine-Learning-A-Review-of-Classification-Techniques-%B3%ED%B9%AE-%B8%AE%BA%E4">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Lsh58 Blog Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/normalize.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/nprogress.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/post.css">
+
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>
+
+</head>
+<body class="post-template" itemscope itemtype="https://schema.org/WebPage">  
+
+        <main id="notepad-post-container" class="notepad-post-container intro-effect-sliced" role="main">
+            <header class="notepad-post-header">
+                <div class="bg-img"></div>
+                
+                <div class="notepad-post-menu-header">
+
+                    <a class="notepad-blog-logo" href="http://localhost:4000">
+                        <img src="http://localhost:4000/images/logo.png" alt="Blog Logo" />
+                    </a>
+
+                <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li>
+                    <a href="http://localhost:4000/">Home</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/featured">Featured Posts</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/tags">Tags</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/categories">Categories</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/about">About</a>
+                 </li>
+            
+           <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+    </ul>
+
+</div>
+            </div>
+
+            <div class="notepad-post-title bg-check">
+                <h1>Supervised Machine Learning: A Review of Classification Techniques 논문 리뷰</h1>
+                <p>by <strong>SeungHyun Lee</strong> &#8212; on <a href="http://localhost:4000/tags/index.html#DNN" data-toggle="tooltip" title="Posts tagged with DNN" rel="tag">DNN</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#논문 리뷰" data-toggle="tooltip" title="Posts tagged with 논문 리뷰" rel="tag">논문 리뷰</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#Review" data-toggle="tooltip" title="Posts tagged with Review" rel="tag">Review</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#Classification" data-toggle="tooltip" title="Posts tagged with Classification" rel="tag">Classification</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#Supervised Machine" data-toggle="tooltip" title="Posts tagged with Supervised Machine" rel="tag">Supervised Machine</a> <strong><time datetime=""></time></strong></p>
+            </div>
+            <div class="bg-img"></div>
+        </header>
+        <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
+        <img src="http://localhost:4000/images/cover3.jpg" alt="cover-image" />
+
+        <article class="notepad-post-content post">
+            <div><p>오늘은</p>
+
+<p>리뷰 논문은 기존에 있는 알고리즘을 리뷰하는 것, 새로운 논문으로 완전히 새로운 기술을 쓰는 논문 크게 두가지가 있다.</p>
+
+<p>해당 논문은 리뷰 논문이고 Supervised Machine Learning, Classification Techniques에 대해서 즉, 지도학습 Classification 기술에 대해서 이야기한다.</p>
+
+<h2 id="주요-단어들">주요 단어들</h2>
+
+<p><a href="">Supervised Machine Learning</a>이란 정답이 있는 데이터를 가지고 컴퓨터가 학습을 하는 것이다. 예를 들어 고양이 사진이 있으면 이 사진이 고양이라는 것을 알고 나서 학습을 하는 것이다. 반대로 <a href="">Supervised Machine Learning</a>이 있는데 이 것은 정답이 정답이 없는 상태로 학습을 하는 것이다.</p>
+
+<p><a href="">Classification</a>은 분류를 하는 것이다. 예를 들어서 고양이, 강아지, 범고래, 원숭이, 사람 등이 있으면 해당 사진들을 학습하고 새로운 사진이 들어왔을 대 이 사진이 학습한 사진들 중에 어떤 사진인지 찾는 것이다. 예를 들어서 누워있는 고양이 사진을 입력했을 때 이 사진이 고양이 사진이라고 알려주는 것을 <a href="">Classification</a>이라고 부른다.</p>
+
+<p><a href="">learning algorithms</a>이란 위에 <a href="">Classification</a> 처럼 데이터를 학습하는 알고리즘이라고 한다.</p>
+
+<p><a href="">data mining techniques</a>이란</p>
+
+
+            </div>
+        </article>
+        <div class="cf"></div>
+        <div class="row text-center">
+            <section class="notepad-post-share">
+                <a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Supervised Machine Learning: A Review of Classification Techniques 논문 리뷰&quot;%20http://localhost:4000/post_try/2019-01-30-Supervised-Machine-Learning-A-Review-of-Classification-Techniques-%B3%ED%B9%AE-%B8%AE%BA%E4%20via%20&#64;"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/post_try/2019-01-30-Supervised-Machine-Learning-A-Review-of-Classification-Techniques-%B3%ED%B9%AE-%B8%AE%BA%E4"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="google-icon" href="https://plus.google.com/share?url=http://localhost:4000/post_try/2019-01-30-Supervised-Machine-Learning-A-Review-of-Classification-Techniques-%B3%ED%B9%AE-%B8%AE%BA%E4"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </section>
+        </div>
+        <div class="cf"></div>
+        
+            <div class="notepad-author-info">
+                <div class="row">
+                    <section class="notepad-post-author small-12 columns">
+                        
+                            <img src="http://localhost:4000/images/lsh58.jpg" class="notepad-post-author-avatar" alt="SeungHyun Lee's photo">
+                        
+                        
+                            <span class="author-label">Author</span>
+                            <h1>SeungHyun Lee</h1>
+                        
+                        
+                            <p><a href="mailto:tmdgus508@naver.com" class="author-website">tmdgus508@naver.com</a></p>
+                        
+                        
+                            <p>A person longing for any dream for a long time  resembles that dream at last .</p>
+                        
+                    </section>
+                </div>
+            </div> 
+        
+        <div class="cf"></div>
+        
+        <section class="notepad-disqus row">
+    <div class="small-12 columns">
+        <h1 class="notepad-comments-header">Comments</h1>
+        <div id="disqus_thread"></div>
+        <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://newhiwoong.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+    </div>
+</section>
+
+        <div class="cf"></div>
+
+    <footer class="notepad-site-footer">
+    <div class="copyright">
+        <section>
+            All content copyright <a href="http://localhost:4000/about">SeungHyun Lee</a> &copy; 2020 &bull; All rights
+            reserved.
+        </section>
+        <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a></section>
+    </div>
+    <div class="social-icons">
+           
+        <a href="http://github.com/lsh58">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+        </a>
+         
+    </div>
+
+    <div class="cf"></div>
+</footer>
+ 
+</main>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="http://localhost:4000/assets/js/vendor/modernizr.js"></script>
+    <script src="http://localhost:4000/assets/js/foundation.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/background-check.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/post-header-animations.js"></script>
+    <script src="http://localhost:4000/assets/js/notepad.js"></script>
+    <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/nprogress.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+    <script type='text/javascript'>console.log("HMFaysal Notepad Theme Version 2.0");</script>
+    <script type='text/javascript'>console.log("https://alum.mit.edu/www/hmfaysal");</script>
+
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133319432-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133319432-1');
+</script> 
+</body>
+</html>

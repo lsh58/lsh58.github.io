@@ -1,0 +1,67 @@
+[
+	
+		{
+		  "title"      : "HTML_시맨틱태그",
+		  "category"   : "webdevelopment",
+		  "url"        : "http://localhost:4000/webdevelopment/HTML_%EC%8B%9C%EB%A7%A8%ED%8B%B1%ED%83%9C%EA%B7%B8",
+		  "date"       : "2020-02-18 00:00:00 +0000",
+		  "shortdate"  : "February 18, 2020"
+		} ,
+	
+		{
+		  "title"      : "개발공부 방법",
+		  "category"   : "lecture",
+		  "url"        : "http://localhost:4000/lecture/%EB%82%98%EB%8A%94%EC%96%B4%EB%96%BB%EA%B2%8C%EA%B0%9C%EB%B0%9C%EA%B3%B5%EB%B6%80%EB%A5%BC%ED%96%88%EB%82%98",
+		  "date"       : "2020-02-17 00:00:00 +0000",
+		  "shortdate"  : "February 17, 2020"
+		} ,
+	
+		{
+		  "title"      : "MarkDown 정리",
+		  "category"   : "webdevelopment",
+		  "url"        : "http://localhost:4000/webdevelopment/Markdown%EA%B4%80%EB%A0%A8%EB%82%B4%EC%9A%A9",
+		  "date"       : "2020-02-17 00:00:00 +0000",
+		  "shortdate"  : "February 17, 2020"
+		} ,
+	
+		{
+		  "title"      : "JS_EX05_Typing",
+		  "category"   : "webdevelopment",
+		  "url"        : "http://localhost:4000/webdevelopment/JS_ex05_Typing",
+		  "date"       : "2020-02-17 00:00:00 +0000",
+		  "shortdate"  : "February 17, 2020"
+		} ,
+	
+		{
+		  "title"      : "JS_EX04_Top",
+		  "category"   : "webdevelopment",
+		  "url"        : "http://localhost:4000/webdevelopment/JS_ex04_Top",
+		  "date"       : "2020-02-17 00:00:00 +0000",
+		  "shortdate"  : "February 17, 2020"
+		} ,
+	
+		{
+		  "title"      : "JS_EX03_슬라이드",
+		  "category"   : "webdevelopment",
+		  "url"        : "http://localhost:4000/webdevelopment/JS_ex03_%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C",
+		  "date"       : "2020-02-17 00:00:00 +0000",
+		  "shortdate"  : "February 17, 2020"
+		} ,
+	
+		{
+		  "title"      : "JS_EX02_끝말잇기",
+		  "category"   : "webdevelopment",
+		  "url"        : "http://localhost:4000/webdevelopment/JS_ex02_%EB%81%9D%EB%A7%90%EC%9E%87%EA%B8%B0",
+		  "date"       : "2020-02-17 00:00:00 +0000",
+		  "shortdate"  : "February 17, 2020"
+		} ,
+	
+		{
+		  "title"      : "JS_EX01_색상바꾸기",
+		  "category"   : "webdevelopment",
+		  "url"        : "http://localhost:4000/webdevelopment/JS_ex01_%EC%83%89%EC%83%81%EB%B0%94%EA%BE%B8%EA%B8%B0",
+		  "date"       : "2020-02-17 00:00:00 +0000",
+		  "shortdate"  : "February 17, 2020"
+		} 
+	
+]

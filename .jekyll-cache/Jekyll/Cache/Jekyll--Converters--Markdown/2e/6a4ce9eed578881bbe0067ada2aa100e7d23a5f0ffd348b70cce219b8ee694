@@ -1,0 +1,28 @@
+I"x<div class="code">
+<script async="" src="//jsfiddle.net/lsh58/9ztmj0cq/19/embed/js,html,css,result/dark/"></script>
+</div>
+<p><em>JSfiddle 의 한계상 스크롤로 인하여 버튼구현이 보이지는 않는다. (따로 해보시길)</em></p>
+
+<h2 id="중요-포인트">중요 포인트</h2>
+
+<h3 id="mathmaxab">Math.max(a,b)</h3>
+<p>a와 b의 값 중 큰 값을 출력한다</p>
+
+<h3 id="documentdocumentelement">document.documentElement</h3>
+<p>document의 Element
+ex) var docElem = document.documentElement</p>
+
+<h3 id="elementclassname-elementclasslistadd"> Element.className, Element.classList.add</h3>
+<p>className은 class 전체를 “#”으로 변경
+classList.add는 class가 존재할 때 “#”을 추가</p>
+
+<h3 id="scrollinterval할일시간">scrollInterval(할일,시간)</h3>
+<p>Number(ms)마다 할 일을 실행
+ex) scrollInterval = setInterval(function() {할 일}, number)</p>
+<h3 id="clearinterval할일">clearInterval(할일)</h3>
+<p>변수 안에 있는 할 일을 중지</p>
+
+<h3 id="windowscrollbyx-50">window.scrollBy(x,-50)</h3>
+<p>윈도우 스크롤의 x축을 x만큼, y축을 y만큼 움직인다</p>
+
+:ET

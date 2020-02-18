@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="https://www.w3.org/2005/Atom" xml:lang="en">
+
+
+
+<title type="text">Lsh58 Blog</title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
+<link rel="alternate" type="text/html" href="http://localhost:4000/" />
+<updated>2020-02-18T00:38:27+00:00</updated>
+<id>http://localhost:4000/</id>
+<author>
+  <name>SeungHyun Lee</name>
+  <uri>http://localhost:4000/</uri>
+  <email>tmdgus508@naver.com</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[HTML_시맨틱태그]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/webdevelopment/HTML_%EC%8B%9C%EB%A7%A8%ED%8B%B1%ED%83%9C%EA%B7%B8"/>
+  <id>http://localhost:4000/webdevelopment/HTML_시맨틱태그</id>
+  <published>2020-02-18T00:00:00+00:00</published>
+  <updated>2020-02-17T00:00:00-00:00</updated>
+  
+  <author>
+    <name>SeungHyun Lee</name>
+    <uri>http://localhost:4000</uri>
+    <email>tmdgus508@naver.com</email>
+  </author>
+  <category scheme="http://localhost:4000/tags/#HTML" term="HTML" />
+  <content type="html">
+  
+    &lt;h1 id=&quot;시맨틱-태그semantic-tag에-관하여&quot;&gt;시맨틱 태그(Semantic Tag)에 관하여&lt;/h1&gt;
+
+&lt;h2 id=&quot;시맨틱태그란&quot;&gt;시맨틱태그란?&lt;/h2&gt;
+&lt;p&gt;W3School에서 정의한 시맨틱과 관련된 정의는 이렇다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Semantics is the study of the meanings of words and phrases in a language.
+Semantic elements = elements with a meaning.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;즉, 시맨틱(Semantics)이란 언어의 단어와 구절의 의미에 관한 연구이며, 시맨틱 요소(Semantic element)라고 하는것은 의미를 가지고있는 요소이다.
+따라서, 여기서 HTML5의 특징으로 보는 정의해 볼 수 있는 Semantic Tags는 이와 같은 맥락에서 의미를 가지고 있는 태그의 단위정도로 이해를 한다면 적절할 것으로 보인다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/lsh58/lsh58.github.io/blob/master/images/semantic_tags.gif?raw=true&quot; alt=&quot;sementic&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;시맨틱 태그는 위에 첨부되어 있는 이미지에 볼 수 있는 주요 태그들 이외에도 다양한 태그가 존재한다. 각 태그의 의미를 해석할 때에는 시맨틱이라는 의미론적인 정의에 걸맞게 태그의 의미를 해석하는것이 도움이된다. 여기서 모든 시맨틱 태그를 소개하지는 않지만 주요하게 사용하는 태그들을 소개합니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;header&quot;&gt;header&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;태그는 &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;태그 이전에 쓰이는 HTML태그이지만 &lt;code&gt;&amp;lt;header&amp;gt;&lt;/code&gt;태그는 &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;태그 안에서 제목 혹은 머리말을 표현하기 위해 사용되는 태그이다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;nav&quot;&gt;nav&lt;/h3&gt;
+    &lt;p&gt;‘네비게이션 바’라고 불리는 메뉴바와 같은 것들을 포함하는 태그이다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;section&quot;&gt;section&lt;/h3&gt;
+    &lt;p&gt;관심사에 따라서 구획을 구분하기 위한 태그이다. 이 또한 &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;태그와 같이 &lt;code&gt;&amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt;&lt;/code&gt;의 제목태그를 담는것을 권고한다. 이를 통해 해당 섹션의 관심사가 무엇인지 검색 로봇에 알려줄 수 있다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;article&quot;&gt;article&lt;/h3&gt;
+    &lt;p&gt;관심사에 따라서 글을 작성하기 위해 작성되는 독립적인 요소입니다. 또한, &lt;code&gt;&amp;lt;h1&amp;gt; ~ &amp;lt;h6&amp;gt;&lt;/code&gt;의 제목 요소를 가지는 것을 권고한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;main&quot;&gt;main&lt;/h3&gt;
+    &lt;p&gt;페이지의 메인 컨텐츠를 담는 태그이다. 한 페이지에 한번 쓰일 수 있다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;aside&quot;&gt;aside&lt;/h3&gt;
+    &lt;p&gt;주요한 주제가 아닌 부차적인 내용을 담는 태그입니다. &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt;태그안에 들어갈 수도있고 외부에 존재할 수도 있습니다. 외부에 존재하는 경우 기존의 &lt;code&gt;&amp;lt;div class=sidebar&amp;gt;&lt;/code&gt;과 같은 역할을 한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;footer&quot;&gt;footer&lt;/h3&gt;
+    &lt;p&gt;footer라는 이름에서 알 수 있듯, 웹페이지의 발 부분, 즉 하단을 나타내는데 사용되는 태그이다. 웹페이지의 저작권, 상표, 연락처, 회사 주소와같은 웹 페이지의 메인 컨텐츠는 아니지만 게시되어야 하는 부가적인 정보를 가지는 태그이다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;시맨틱-태그의-필요성&quot;&gt;시맨틱 태그의 필요성&lt;/h2&gt;
+&lt;p&gt;웹 페이지의 소스코드 부분은 겉으로만 이쁘게 보인다면 웹 페이지를 사용하는 사용자에게는 문제가 되지 않는다. 하지만 웹 페이지를 만들어내는 기계는 소스코드에서 태그의 내용에 따라 내용을 추출하여 사용자에게 보여준다.
+따라서, 검색 엔진이 데이터를 효율적으로 추출하여 더욱 의미있는 검색결과를 만들어 내기 위해서는 태그에 의미를 담아 검색엔진이 이해할 수 있도록 돕는것이 좋은 방법일 수 있다.&lt;/p&gt;
+
+&lt;p&gt;또한, 검색엔진은 물론 각 태그의 의미를 명확하게함으로써 웹 사이트에 접근성을 높이는 의미있는 결과를 낳을 수 있다. 예를 들면, 시각장애인과 같은 경우 듣는것으로 의존하여 웹을 사용하는데 이때, 적절하게 시맨틱 태그가 연결되어 있다면, 해당 부분이 어떤 내용이고 어떤 의미를 담고 있는지 올바르게 선별하여 들어볼수 있는 높은 접근성을 제공할 수 있다.&lt;/p&gt;
+
+  
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/webdevelopment/HTML_%EC%8B%9C%EB%A7%A8%ED%8B%B1%ED%83%9C%EA%B7%B8&quot;&gt;HTML_시맨틱태그&lt;/a&gt; was originally published by SeungHyun Lee at &lt;a href=&quot;http://localhost:4000&quot;&gt;Lsh58 Blog&lt;/a&gt; on February 18, 2020.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[개발공부 방법]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/lecture/%EB%82%98%EB%8A%94%EC%96%B4%EB%96%BB%EA%B2%8C%EA%B0%9C%EB%B0%9C%EA%B3%B5%EB%B6%80%EB%A5%BC%ED%96%88%EB%82%98"/>
+  <id>http://localhost:4000/lecture/나는어떻게개발공부를했나</id>
+  <published>2020-02-17T00:00:00+00:00</published>
+  <updated>2020-02-17T00:00:00-00:00</updated>
+  
+  <author>
+    <name>SeungHyun Lee</name>
+    <uri>http://localhost:4000</uri>
+    <email>tmdgus508@naver.com</email>
+  </author>
+  <category scheme="http://localhost:4000/tags/#lecture" term="lecture" />
+  <content type="html">
+  
+    &lt;hr /&gt;
+
+&lt;h2 id=&quot;나는-무엇을-개발하고-싶은가&quot;&gt;나는 무엇을 개발하고 싶은가?&lt;/h2&gt;
+
+&lt;p&gt;개발 공부를 처음 시작할 때를 떠올려보면 제가 무엇을 개발하고 싶은지도 몰랐습니다. ‘하고 싶은 것을 찾기’란 말처럼 쉽지 않습니다. 직접 해보지 않으면 모르기 때문입니다. 물론 개발의 시작이 자신만의 서비스를 만들고 싶었던 분은 하고 싶은 것을 바로 찾을 수 있겠죠. 개발이라는 분야를 정했지만 이 바닥도 분야에 따라 천지차이입니다. 다행히 겉핥기 식으로라도 어떠한 분야가 있으며 무엇을 학습해야 하는지 정도는 구글링을 통해 해결할 수 있는 시대가 되었습니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;나는-무엇을-해야하는가&quot;&gt;나는 무엇을 해야하는가?&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;orange&quot;&gt;우선 자신이 무엇을 모르는지 아는 것이 중요합니다.&lt;/span&gt; 사실 무엇을 모르는지 깨닫는 것도 오래걸립니다. 내가 무엇을 모르는지 안다는 것은 자기가 개발하고 싶은 분야에 대해서 어느 정도 큰 틀을 이해하고 있다는 말이기 때문입니다. 그렇기 때문에 각각의 세부 분야에 대해서 깊이 공부하기 보다는 전체적인 큰 틀을 잡는 것이 중요합니다.&lt;/p&gt;
+
+&lt;p&gt;사실 우리는 알게 모르게 여러 분야에서 이렇게 ‘학습’을 합니다. 장애물 달리기 경주를 예로 들어보겠습니다. 경주에서 어느 정도의 기록을 내기 위해서는 어떻게 해야 할까요? 우선 경주에서 어떠한 장애물들이 존재하는지 파악해야 합니다. 각각의 장애물들을 어설프게 지나가더라도 일단 한 바퀴는 돌아봐야 합니다. 무작정 달리기 연습만 한다고 해서, 특정 장애물에 대해서 연습을 한다고 해서 기록이 오르지 않습니다. 물론 오르기야 하겠습니다만, 그 방법은 지루하고 힘든 길일 가능성이 높습니다.&lt;/p&gt;
+
+&lt;p&gt;장애물 달리기를 예로 들었더니 너무 당연한 얘기라고 합니다만 이것은 학습에서도 마찬가지 입니다. 우리가 개발하고자 하는 분야에서 어떠한 ‘성취’를 이루기 위해서는 그 분야에 대해서 어설프게라도 한 ‘사이클’을 돌아봐야 합니다. 무작정 특정 개발 언어를 깊게 공부한다던가, 운영체제와 같은 CS 기초과목을 깊게 공부한다는 것이 우선되면 그 성취는 언젠가는 올지 몰라도 그 길은 매우 재미없고 힘든 길일 가능성이 높습니다.&lt;/p&gt;
+
+&lt;p&gt;공부는 일단 재미없습니다. 개발이라는 분야도 끊임없이 공부해야 하는 분야입니다. 개발이 너무 하고 싶어서 개발 공부를 시작했더라도 눈 앞의 성취가 바로 보이지 않는다면 금방 재미없어집니다.지금 학습하고자 하는 이것을 왜 학습해야 하는지를 알고 학습해야 합니다. 경주 중 어느 위치에 특정 장애물이 있으니 그 때의 페이스에 맞춰 그 장애물에 대한 연습을 하는 것처럼.&lt;/p&gt;
+
+&lt;p&gt;한 사이클을 돌아봤다면, 모르는 용어도 많고 무슨 원리로 이렇게 동작하는지에 대한 이해를 필요로 하는 것이 당연합니다. 그 부분부터 학습해나가면 됩니다. 무엇을 하려고 했는데 이 부분에 대한 지식이 필요할 때 학습하는 것입니다. 제가 존경하는 개발자 분은 이러한 학습 방법을 ‘양파 껍질 학습 방법’이라고 하셨습니다.
+그리고 한 가지 더, &lt;span class=&quot;orange&quot;&gt;‘열심히’보다 ‘꾸준히’하는 것이 중요하다고 생각합니다.&lt;/span&gt; 이틀 12시간 앉아서 열심히 공부만 하는 것은 누구나 다 할 수 있습니다. 하지만 하루에 4시간씩, 6시간씩을 주 5일을 일정하게 꾸준히 하는 것은 정말 힘듭니다. 양파를 까다말면 눈물만 날 뿐입니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-git과-github을-우선적으로-공부한다&quot;&gt;1. Git과 GitHub을 우선적으로 공부한다.&lt;/h2&gt;
+
+&lt;p&gt;가깝고도 먼 Git과 GitHub처음에 Git은 정말 어렵습니다. 하지만 &lt;strong&gt;정말 필수적인 녀석이니 꼭 숙달하면 좋겠습니다.&lt;/strong&gt; 학습을 위한 좋은 자료는 정말 많습니다. 배우고자하는 의지만 있다면 얼마든지 익힐 수 있습니다. GitHub이 배출하는데 있어 “어디에”라는 이슈와 “누구한테”라는 이슈를 해결줄 수 있습니다. GitHub에 정리한 내용을 올리면 누군가는 보게 됩니다. (이제 공부만 하면 되네요.) 한 가지 짚고 가자면, &lt;em&gt;Git과 GitHub을 혼동하지 마세요.&lt;/em&gt; 정말 아쉽게도 Git과 GitHub을 혼동하는 경우를 너무 많이 보았습니다. 물론 서로 밀접한 관련이 있는 것은 사실이지만, 다른건 다른거니까요. 이 두 가지에 대해서 익숙해지시면 앞으로 개발하는데 있어서는 물론이고 여러 면에서 정말 좋습니다. GitHub을 어느 정도 이해하셨으면 이제 본격적으로 들어갑니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-일단-create-repository&quot;&gt;1–1. 일단 Create Repository&lt;/h3&gt;
+
+&lt;p&gt;만약 프로젝트를 하게 되면 일단 GitHub에 repository(public)를 만들고 시작합니다. 그리고 작성되는 코드들을 모두 commit 해준 다음에 GitHub에 push 해줍니다. 벌써 배출을 했습니다. 코드를 공유한거나 다름없습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;12-필요없는-건-필요없어요&quot;&gt;1–2. 필요없는 건 필요없어요.&lt;/h3&gt;
+
+&lt;p&gt;개발할 때만 필요한, 나한테만 필요한, 공유할 필요가 없는, 그런 것이 있습니다. 그런 건 Repository에 포함시키지 말아야 합니다. 다른 사람이 봤을 때, Git과 GitHub에 대한 이해는 물론 프로그래밍 전반에 대해 이해도가 떨어지는 사람이라고 보이기 쉽습니다.&lt;/p&gt;
+
+&lt;p&gt;.gitignore를 적극적으로 활용하여 필요없는 파일은 제외한 뒤 push 해줍니다. gitignore.io(https://www.gitignore.io/)라는 친절한 사이트도 있습니다. 적극적으로 사용하여 필요없는 파일을 제외해줍시다.&lt;/p&gt;
+
+&lt;h3 id=&quot;13-의미없는-커밋-메세지는-의미없다&quot;&gt;1–3. 의미없는 커밋 메세지는 의미없다.&lt;/h3&gt;
+
+&lt;p&gt;잘 나가는 오픈소스 프로젝트의 Commit message rule을 따라서 영어로 프로젝트의 처음부터 끝까지 일관성 있게
+husky라는 도구를 사용하면서 커밋 메시지를 작성하는건 바라지 않습니다. 그저 temp, s, t, … 등 아무 의미 없는 커밋메세지만 아니면 됩니다. 한글로 작성하더라도 의미있는 커밋 메세지를 남기는 습관을 들인다면 좋을 것입니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;14-github을-잘-활용해봅시다&quot;&gt;1–4. GitHub을 잘 활용해봅시다.&lt;/h3&gt;
+
+&lt;p&gt;GitHub은 다음과 같이 훌륭한 것들을 기본적으로 제공해줍니다&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;README.md
+자신의 프로젝트를 잘 설명하기 위해서는 README.md 만한게 없습니다. (어서 마크다운 문법에 익숙해지도록 합시다.)&lt;/li&gt;
+  &lt;li&gt;Issue, labels
+프로젝트를 진행하면서 앞으로 해야할 일들을 Issue로 등록해보는건 어떨까요?&lt;/li&gt;
+  &lt;li&gt;Pull Request
+무조건 master branch로 push하지 말고 다른 branch로 체크 아웃하여 작업을 한 뒤 PR을 보내는 방식으로 진행해보는 것은 어떨까요? 한 발 더 나아가 코드 리뷰를 진행한다면 금상첨화일 것입니다.&lt;/li&gt;
+  &lt;li&gt;Wiki
+팀 프로젝트에서 공유해야 하는 내용이 있다면 Wiki를 활용해도 좋을 것 같습니다. 이것들을 잘 활용하면 보다 체계가 잡힌 repository를 구성할 수 있습니다. 이외에도 GitHub을 잘 활용하면 보다 재밌는 프로젝트를 진행할 수 있습니다 :)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2-daily-commit-or-today-i-learned&quot;&gt;2. Daily commit or Today I Learned&lt;/h2&gt;
+
+&lt;p&gt;블로그에 1일 1포스팅하는 것보다 TIL이 접근성 면에서 더 좋다고 생각합니다. 일단 부담스럽지 않고, 블로그를 개설한다는 어마어마한 장벽이 존재하지 않습니다. (다만 git에 대한 이해가 선행되야 합니다.)&lt;/p&gt;
+
+&lt;p&gt;“제가 올린 내용이 틀리면 어떡하죠?”&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;orange&quot;&gt;틀리면 뭐 어떤가요? 틀려도 됩니다. 다만 잘못된 정보를 공유하지 않기 위해 많이 노력해야 합니다.&lt;/span&gt; 이 경우, 가장 좋은 Case는 제대로 알고 있는 사람이 와서 댓글을 달아주는 겁니다. (그거 아니고 이거예요! 이렇게 말이죠)
+그런데 사실, 처음 블로그 또는 TIL을 시작하게 되면 페이스북 그룹에 공유하지 않는 이상 아무도 보지 않습니다. 혹시 자신이 열심히 TIL을 작성했는데 공유하고 싶다면 저에게 알려주세요. 제 페이스북 페이지에 소개해드리겠습니다! :)&lt;/p&gt;
+
+&lt;p&gt;“블로그는 하고 싶은데 쓸 게 없어요ㅜㅜ”&lt;/p&gt;
+
+&lt;p&gt;우리는 모두 코딩하다가 막히고, 검색을 합니다. 대부분의 경우 하나의 검색 결과로 해결되지 않습니다. 처음 본 A라는 블로그의 내용이 부족했기 때문입니다. 그래서 B도 보고 C도 봅니다. 해결했습니다. 그리고 바로 넘어갑니다.
+잠깐!여기서 부터 시작해보세요. 어떠한 상황에서 문제를 만났고, 여러 블로그에서 취합한 정보를 정리하여 문제 해결 방법을 제시하는 것부터 시작하면 됩니다. 처음부터 대단한 Tutorial을 작성하는 것만이 블로그하는 것이 아닙니다. 바로 거기서 부터 시작하시면 됩니다 :)&lt;/p&gt;
+
+&lt;h2 id=&quot;3-클론-코딩&quot;&gt;3. 클론 코딩&lt;/h2&gt;
+
+&lt;p&gt;말 그대로 그대로 코딩해보는 겁니다. 물론 코드는 보지 않고 외관 모습만 보고 만들어봅니다. 저도 처음에는 디자인이 잘 된 여러 페이지들을 따라 만들면서 HTML/CSS를 공부했던 기억이 있습니다. 우리에게는 개발자 도구라는 엄청난 친구가 있어서 많은 도움을 받을 수 있기도 합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;orange&quot;&gt;소스 코드가 엉망인 것은 신경쓰지 말고 일단 따라 만들어보는 겁니다.&lt;/span&gt; 물론 이 클론 코딩하며 연습한 소스 코드도 GitHub에 push해줍니다. 자신만의 서비스를 만들어 보는 것도 좋지만 기획부터 디자인까지 하다가 정작 개발에는 많이 신경 못쓰는 경우를 보았는데요, 개발 실력을 기르기 위해서는 클론 코딩을 추천드려봅니다.&lt;/p&gt;
+
+&lt;p&gt;출처 : &lt;a href=&quot;https://jbee.io/essay/how_do_i_study_1/&quot;&gt;https://jbee.io/essay/how_do_i_study_1/&lt;/a&gt;&lt;/p&gt;
+
+  
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/lecture/%EB%82%98%EB%8A%94%EC%96%B4%EB%96%BB%EA%B2%8C%EA%B0%9C%EB%B0%9C%EA%B3%B5%EB%B6%80%EB%A5%BC%ED%96%88%EB%82%98&quot;&gt;개발공부 방법&lt;/a&gt; was originally published by SeungHyun Lee at &lt;a href=&quot;http://localhost:4000&quot;&gt;Lsh58 Blog&lt;/a&gt; on February 17, 2020.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[MarkDown 정리]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/webdevelopment/Markdown%EA%B4%80%EB%A0%A8%EB%82%B4%EC%9A%A9"/>
+  <id>http://localhost:4000/webdevelopment/Markdown관련내용</id>
+  <published>2020-02-17T00:00:00+00:00</published>
+  <updated>2020-02-17T00:00:00-00:00</updated>
+  
+  <author>
+    <name>SeungHyun Lee</name>
+    <uri>http://localhost:4000</uri>
+    <email>tmdgus508@naver.com</email>
+  </author>
+  <category scheme="http://localhost:4000/tags/#Blog" term="Blog" />
+  <content type="html">
+  
+    &lt;h1 id=&quot;마크다운에-관하여&quot;&gt;마크다운에 관하여&lt;/h1&gt;
+
+&lt;h2 id=&quot;마크다운이란&quot;&gt;마크다운이란?&lt;/h2&gt;
+
+&lt;p&gt;Markdown은 텍스트 기반의 마크업언어로 2004년 존그루버에 의해 만들어졌으며 쉽게 쓰고 읽을 수 있으며 HTML로 변환이 가능하다. 특수기호와 문자를 이용한 매우 간단한 구조의 문법을 사용하여 웹에서도 보다 빠르게 컨텐츠를 작성하고 보다 직관적으로 인식할 수 있다. 마크다운이 최근 각광받기 시작한 이유는 깃헙(https://github.com) 덕분이다. 깃헙의 저장소Repository에 관한 정보를 기록하는 README.md는 깃헙을 사용하는 사람이라면 누구나 가장 먼저 접하게 되는 마크다운 문서였다. 마크다운을 통해서 설치방법, 소스코드 설명, 이슈 등을 간단하게 기록하고 가독성을 높일 수 있다는 강점이 부각되면서 점점 여러 곳으로 퍼져가게 된다.&lt;/p&gt;
+
+&lt;h2 id=&quot;마크다운의-장-단점&quot;&gt;마크다운의 장-단점&lt;/h2&gt;
+
+&lt;h3 id=&quot;장점&quot;&gt;장점&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;간결하다.&lt;/li&gt;
+  &lt;li&gt;별도의 도구없이 작성가능하다.&lt;/li&gt;
+  &lt;li&gt;다양한 형태로 변환이 가능하다.&lt;/li&gt;
+  &lt;li&gt;텍스트(Text)로 저장되기 때문에 용량이 적어 보관이 용이하다.&lt;/li&gt;
+  &lt;li&gt;텍스트파일이기 때문에 버전관리시스템을 이용하여 변경이력을 관리할 수 있다.&lt;/li&gt;
+  &lt;li&gt;지원하는 프로그램과 플랫폼이 다양하다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;단점&quot;&gt;단점&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;표준이 없다.&lt;/li&gt;
+  &lt;li&gt;표준이 없기 때문에 도구에 따라서 변환방식이나 생성물이 다르다.&lt;/li&gt;
+  &lt;li&gt;모든 HTML 마크업을 대신하지 못한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;jekyll기반 블로그에서 고려할 마크다운은 kramdown이다.&lt;br /&gt;
+그 이유는 Github page에서는 작년 5월부터 kramdown만 지원하기 때문이다. [\^myfootnote]&lt;/p&gt;
+
+&lt;h2 id=&quot;머리말-header&quot;&gt;머리말 (Header)&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;  * # H1 입니다.
+
+  * ## H2 입니다.
+
+  * ### H3 입니다.
+
+  * #### H4 입니다.
+
+  * ##### H5 입니다.
+
+  * ###### H6 입니다.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;수평선-horizon&quot;&gt;수평선 (Horizon)&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;***
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;개행new-line&quot;&gt;개행(New line)&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;문장끝에 공백2칸+Enter
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;인용구-blockquote&quot;&gt;인용구 (BlockQuote)&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; 인용구입니다.
+
+&amp;gt;&amp;gt; 인용구안에 인용구를 사용할 수 있습니다.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;목록-list&quot;&gt;목록 (List)&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;* 순서가 없는 리스트입니다.
+  * 리스트1
+  * 리스트2
+  * 리스트3
+
+* 순서가 있는 리스트입니다.
+  1. 리스트1
+  2. 리스트2
+  3. 리스트3
+
+* 상위 리스트1
+  * 하위 리스트1
+  * 하위 리스트2
+    * 하위의 하위 리스트1
+    * 하위의 하위 리스트2
+
+* 리스트('*')
++ 리스트('+')
+- 리스트('-')
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;코드-code&quot;&gt;코드 (Code)&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;* 문장속 코드 `example code inline` 삽입 예시입니다.
+
+* 박스형 코드 삽입예시입니다.
+ '''
+ '''
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;링크&quot;&gt;링크&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;* &amp;lt;https://www.github.com&amp;gt;
+* [Github](https://www.github.com)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;강조&quot;&gt;강조&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;* 강조 문법 **강조된 부분** 예시입니다.
+_이탤릭_ , *이탤릭*
+__볼드__ **볼드**
+___이탤릭볼드___
+***이탤릭볼드***
+**이렇게 _할수도_**
+~~취소선~~
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;이미지&quot;&gt;이미지&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;![예시 이미지](https://raw.githubusercontent.com/ByungJun25/Wiki/master/Markdown/example_image.jpg)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;table&quot;&gt;TABLE&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;1 | 2 | 3
+--- | --- | ---
+표 쓸때는 | 중간 두번째줄에 | `---` 이거 필요합니다.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;마크다운-포맷-무시하기&quot;&gt;마크다운 포맷 무시하기&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;이건데&lt;/em&gt; .. *이렇게*&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*이건데* .. \*이렇게\*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;emoji&quot;&gt;Emoji&lt;/h2&gt;
+
+&lt;p&gt;😍&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;amp;#128525;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;*더많은 이모티콘 https://steemit.com/steemkr-guide/@snow-airline/steemkr-quick-start-guide&lt;/p&gt;
+
+&lt;h2 id=&quot;배지badge-만들기&quot;&gt;배지(badge) 만들기&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://shields.io&quot;&gt;https://shields.io&lt;/a&gt;&lt;/p&gt;
+
+  
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/webdevelopment/Markdown%EA%B4%80%EB%A0%A8%EB%82%B4%EC%9A%A9&quot;&gt;MarkDown 정리&lt;/a&gt; was originally published by SeungHyun Lee at &lt;a href=&quot;http://localhost:4000&quot;&gt;Lsh58 Blog&lt;/a&gt; on February 17, 2020.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[JS_EX05_Typing]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/webdevelopment/JS_ex05_Typing"/>
+  <id>http://localhost:4000/webdevelopment/JS_ex05_Typing</id>
+  <published>2020-02-17T00:00:00+00:00</published>
+  <updated>2020-02-17T00:00:00-00:00</updated>
+  
+  <author>
+    <name>SeungHyun Lee</name>
+    <uri>http://localhost:4000</uri>
+    <email>tmdgus508@naver.com</email>
+  </author>
+  <category scheme="http://localhost:4000/tags/#JS" term="JS" />
+  <content type="html">
+  
+    &lt;div class=&quot;code&quot;&gt;
+&lt;script async=&quot;&quot; src=&quot;//jsfiddle.net/lsh58/9ztmj0cq/23/embed/js,html,css,result/dark/&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;중요-포인트&quot;&gt;중요 포인트&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/lsh58/lsh58.github.io/blob/master/images/ex05_typing.PNG?raw=true&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;charat&quot;&gt;charAt&lt;/h3&gt;
+&lt;p&gt;문자추출&lt;/p&gt;
+
+&lt;h3 id=&quot;slice&quot;&gt;slice&lt;/h3&gt;
+&lt;p&gt;배열의 일부분 선택해 새로운 배열 만드는 속성&lt;/p&gt;
+
+&lt;h3 id=&quot;settimeout&quot;&gt;setTimeout&lt;/h3&gt;
+&lt;p&gt;함수나 지정된 코드를 실행하는 타이머를 설정 – 재귀함수 만들기&lt;/p&gt;
+
+&lt;h3 id=&quot;innerhtml&quot;&gt;innerHTML&lt;/h3&gt;
+&lt;p&gt;html문서에 출력&lt;/p&gt;
+
+
+  
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/webdevelopment/JS_ex05_Typing&quot;&gt;JS_EX05_Typing&lt;/a&gt; was originally published by SeungHyun Lee at &lt;a href=&quot;http://localhost:4000&quot;&gt;Lsh58 Blog&lt;/a&gt; on February 17, 2020.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[JS_EX04_Top]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/webdevelopment/JS_ex04_Top"/>
+  <id>http://localhost:4000/webdevelopment/JS_ex04_Top</id>
+  <published>2020-02-17T00:00:00+00:00</published>
+  <updated>2020-02-17T00:00:00-00:00</updated>
+  
+  <author>
+    <name>SeungHyun Lee</name>
+    <uri>http://localhost:4000</uri>
+    <email>tmdgus508@naver.com</email>
+  </author>
+  <category scheme="http://localhost:4000/tags/#JS" term="JS" />
+  <content type="html">
+  
+    &lt;div class=&quot;code&quot;&gt;
+&lt;script async=&quot;&quot; src=&quot;//jsfiddle.net/lsh58/9ztmj0cq/19/embed/js,html,css,result/dark/&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;JSfiddle 의 한계상 스크롤로 인하여 버튼구현이 보이지는 않는다. (따로 해보시길)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;중요-포인트&quot;&gt;중요 포인트&lt;/h2&gt;
+
+&lt;h3 id=&quot;mathmaxab&quot;&gt;Math.max(a,b)&lt;/h3&gt;
+&lt;p&gt;a와 b의 값 중 큰 값을 출력한다&lt;/p&gt;
+
+&lt;h3 id=&quot;documentdocumentelement&quot;&gt;document.documentElement&lt;/h3&gt;
+&lt;p&gt;document의 Element
+ex) var docElem = document.documentElement&lt;/p&gt;
+
+&lt;h3 id=&quot;elementclassname-elementclasslistadd&quot;&gt; Element.className, Element.classList.add&lt;/h3&gt;
+&lt;p&gt;className은 class 전체를 “#”으로 변경
+classList.add는 class가 존재할 때 “#”을 추가&lt;/p&gt;
+
+&lt;h3 id=&quot;scrollinterval할일시간&quot;&gt;scrollInterval(할일,시간)&lt;/h3&gt;
+&lt;p&gt;Number(ms)마다 할 일을 실행
+ex) scrollInterval = setInterval(function() {할 일}, number)&lt;/p&gt;
+&lt;h3 id=&quot;clearinterval할일&quot;&gt;clearInterval(할일)&lt;/h3&gt;
+&lt;p&gt;변수 안에 있는 할 일을 중지&lt;/p&gt;
+
+&lt;h3 id=&quot;windowscrollbyx-50&quot;&gt;window.scrollBy(x,-50)&lt;/h3&gt;
+&lt;p&gt;윈도우 스크롤의 x축을 x만큼, y축을 y만큼 움직인다&lt;/p&gt;
+
+
+  
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/webdevelopment/JS_ex04_Top&quot;&gt;JS_EX04_Top&lt;/a&gt; was originally published by SeungHyun Lee at &lt;a href=&quot;http://localhost:4000&quot;&gt;Lsh58 Blog&lt;/a&gt; on February 17, 2020.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[JS_EX03_슬라이드]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/webdevelopment/JS_ex03_%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C"/>
+  <id>http://localhost:4000/webdevelopment/JS_ex03_슬라이드</id>
+  <published>2020-02-17T00:00:00+00:00</published>
+  <updated>2020-02-17T00:00:00-00:00</updated>
+  
+  <author>
+    <name>SeungHyun Lee</name>
+    <uri>http://localhost:4000</uri>
+    <email>tmdgus508@naver.com</email>
+  </author>
+  <category scheme="http://localhost:4000/tags/#JS" term="JS" />
+  <content type="html">
+  
+    &lt;div class=&quot;code&quot;&gt;
+&lt;script async=&quot;&quot; src=&quot;//jsfiddle.net/lsh58/9ztmj0cq/16/embed/js,html,css,result/dark/&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;JSfiddle 의 한계상 이미지는 들어가지 못했다.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;중요-포인트&quot;&gt;중요 포인트&lt;/h2&gt;
+
+&lt;h3 id=&quot;preventdefault&quot;&gt;preventDefault();&lt;/h3&gt;
+&lt;p&gt;기존에 있던 이벤트들 실행방지
+ex) e.preventDefault();&lt;/p&gt;
+
+&lt;h3 id=&quot;offsetwidth-offsetheight&quot;&gt;offsetWidth, offsetHeight&lt;/h3&gt;
+&lt;p&gt;일반적으로 엘리먼트의 전체 크기를 알고 싶다면, &lt;code&gt;offsetWidth&lt;/code&gt;와 &lt;code&gt;offsetHeight&lt;/code&gt; 속성을 가져오면 된다.
+이 속성은 엘리먼트의 패딩과 보더, 스크롤바의 사이즈를 포함한 값을 리턴한다.
+ex) topHeight = slides[0].offsetHeight;&lt;/p&gt;
+
+
+  
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/webdevelopment/JS_ex03_%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C&quot;&gt;JS_EX03_슬라이드&lt;/a&gt; was originally published by SeungHyun Lee at &lt;a href=&quot;http://localhost:4000&quot;&gt;Lsh58 Blog&lt;/a&gt; on February 17, 2020.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[JS_EX02_끝말잇기]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/webdevelopment/JS_ex02_%EB%81%9D%EB%A7%90%EC%9E%87%EA%B8%B0"/>
+  <id>http://localhost:4000/webdevelopment/JS_ex02_끝말잇기</id>
+  <published>2020-02-17T00:00:00+00:00</published>
+  <updated>2020-02-17T00:00:00-00:00</updated>
+  
+  <author>
+    <name>SeungHyun Lee</name>
+    <uri>http://localhost:4000</uri>
+    <email>tmdgus508@naver.com</email>
+  </author>
+  <category scheme="http://localhost:4000/tags/#JS" term="JS" />
+  <content type="html">
+  
+    &lt;div class=&quot;code&quot;&gt;
+&lt;script async=&quot;&quot; src=&quot;//jsfiddle.net/lsh58/9ztmj0cq/3/embed/js,html,css,result/dark/&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+  
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/webdevelopment/JS_ex02_%EB%81%9D%EB%A7%90%EC%9E%87%EA%B8%B0&quot;&gt;JS_EX02_끝말잇기&lt;/a&gt; was originally published by SeungHyun Lee at &lt;a href=&quot;http://localhost:4000&quot;&gt;Lsh58 Blog&lt;/a&gt; on February 17, 2020.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[JS_EX01_색상바꾸기]]></title>
+  <link rel="alternate" type="text/html" href="http://localhost:4000/webdevelopment/JS_ex01_%EC%83%89%EC%83%81%EB%B0%94%EA%BE%B8%EA%B8%B0"/>
+  <id>http://localhost:4000/webdevelopment/JS_ex01_색상바꾸기</id>
+  <published>2020-02-17T00:00:00+00:00</published>
+  <updated>2020-02-17T00:00:00-00:00</updated>
+  
+  <author>
+    <name>SeungHyun Lee</name>
+    <uri>http://localhost:4000</uri>
+    <email>tmdgus508@naver.com</email>
+  </author>
+  <category scheme="http://localhost:4000/tags/#JS" term="JS" />
+  <content type="html">
+  
+    &lt;div class=&quot;code&quot;&gt;
+&lt;script async=&quot;&quot; src=&quot;//jsfiddle.net/lsh58/9ztmj0cq/1/embed/js,html,css,result/dark/&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+  
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/webdevelopment/JS_ex01_%EC%83%89%EC%83%81%EB%B0%94%EA%BE%B8%EA%B8%B0&quot;&gt;JS_EX01_색상바꾸기&lt;/a&gt; was originally published by SeungHyun Lee at &lt;a href=&quot;http://localhost:4000&quot;&gt;Lsh58 Blog&lt;/a&gt; on February 17, 2020.&lt;/p&gt;</content>
+</entry>
+
+</feed>

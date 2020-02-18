@@ -1,0 +1,21 @@
+I"|<div class="code">
+<script async="" src="//jsfiddle.net/lsh58/9ztmj0cq/23/embed/js,html,css,result/dark/"></script>
+</div>
+
+<h2 id="중요-포인트">중요 포인트</h2>
+
+<p><img src="https://github.com/lsh58/lsh58.github.io/blob/master/images/ex05_typing.PNG?raw=true" alt="image" /></p>
+
+<h3 id="charat">charAt</h3>
+<p>문자추출</p>
+
+<h3 id="slice">slice</h3>
+<p>배열의 일부분 선택해 새로운 배열 만드는 속성</p>
+
+<h3 id="settimeout">setTimeout</h3>
+<p>함수나 지정된 코드를 실행하는 타이머를 설정 – 재귀함수 만들기</p>
+
+<h3 id="innerhtml">innerHTML</h3>
+<p>html문서에 출력</p>
+
+:ET

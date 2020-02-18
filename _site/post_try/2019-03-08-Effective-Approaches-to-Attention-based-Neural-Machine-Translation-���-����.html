@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<!--
+====================================================
+    __  ____  ______________  _______ ___    __ 
+   / / / /  |/  / ____/   \ \/ / ___//   |  / / 
+  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /  
+ / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
+/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
+                                                     
+====================================================
+Author: Hossain Mohammad Faysal
+Profile: https://www.facebook.com/hmfaysal
+Version: 1.0
+Description: Awesome dude, awesome life
+====================================================
+-->
+<head>
+<meta charset="utf-8">
+<title>EFFECTIVE APPROACHES TO ATTENTION-BASED NEURAL MACHINE TRANSLATION 논문 리뷰 &vert; LSH58 BLOG</title>
+<meta name="description" content="Front-end Study">
+<meta name="keywords" content="논문 리뷰, attention, neural machine translation">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Effective Approaches to Attention-based Neural Machine Translation 논문 리뷰">
+<meta property="og:description" content="Front-end Study">
+<meta property="og:url" content="http://localhost:4000/post_try/2019-03-08-Effective-Approaches-to-Attention-based-Neural-Machine-Translation-%B3%ED%B9%AE-%B8%AE%BA%E4">
+<meta property="og:site_name" content="Lsh58 Blog">
+<meta property="og:image" content="http://localhost:4000/images/cover3.jpg">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/post_try/2019-03-08-Effective-Approaches-to-Attention-based-Neural-Machine-Translation-%B3%ED%B9%AE-%B8%AE%BA%E4">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Lsh58 Blog Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/normalize.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/nprogress.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/post.css">
+
+
+
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>
+
+</head>
+<body class="post-template" itemscope itemtype="https://schema.org/WebPage">  
+
+        <main id="notepad-post-container" class="notepad-post-container intro-effect-sliced" role="main">
+            <header class="notepad-post-header">
+                <div class="bg-img"></div>
+                
+                <div class="notepad-post-menu-header">
+
+                    <a class="notepad-blog-logo" href="http://localhost:4000">
+                        <img src="http://localhost:4000/images/logo.png" alt="Blog Logo" />
+                    </a>
+
+                <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li>
+                    <a href="http://localhost:4000/">Home</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/featured">Featured Posts</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/tags">Tags</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/categories">Categories</a>
+                 </li>
+
+            <li>
+                    <a href="http://localhost:4000/about">About</a>
+                 </li>
+            
+           <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+    </ul>
+
+</div>
+            </div>
+
+            <div class="notepad-post-title bg-check">
+                <h1>Effective Approaches to Attention-based Neural Machine Translation 논문 리뷰</h1>
+                <p>by <strong>SeungHyun Lee</strong> &#8212; on <a href="http://localhost:4000/tags/index.html#논문 리뷰" data-toggle="tooltip" title="Posts tagged with 논문 리뷰" rel="tag">논문 리뷰</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#attention" data-toggle="tooltip" title="Posts tagged with attention" rel="tag">attention</a>&nbsp;&comma;&nbsp;<a href="http://localhost:4000/tags/index.html#neural machine translation" data-toggle="tooltip" title="Posts tagged with neural machine translation" rel="tag">neural machine translation</a> <strong><time datetime=""></time></strong></p>
+            </div>
+            <div class="bg-img"></div>
+        </header>
+        <button class="trigger bg-check" data-info="Read more"><span>Trigger</span></button>
+        <img src="http://localhost:4000/images/cover3.jpg" alt="cover-image" />
+
+        <article class="notepad-post-content post">
+            <div><p>attention 기법을 처음 적용하여 긴 문장의 NMT(Neural machine translation)에서 성능을 향상시킨 <a href="https://arxiv.org/pdf/1508.04025.pdf">NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE</a>을 리뷰를 해보겠다.</p>
+
+<p><img src="http://localhost:4000/images/Effective_Approaches_to_Attention-based_Neural_Machine_Translation1.JPG" alt="" /><br />
+<code>WMT</code> 그리고 비슷한 시대에 나온 <code>Jeans et al.</code> 논문에서 나온 <code>BLEU Score</code>보다 훨씬 좋은 성능을 보여 <code>State of Arts</code>를 달성했다.</p>
+
+<p><a href="https://arxiv.org/pdf/1508.04025.pdf">논문</a>를 참고하자.</p>
+
+<h2 id="abstract-introduction-요약">ABSTRACT, Introduction 요약</h2>
+
+<p><code>attentional</code> 메커니즘은 최근 <code>Neural machine translation</code> 이하 <code>NMT</code>을 개선하는데 사용되었다. 그러나 <code>attentional</code>기반 <code>NMT</code>에서 유용한 구조를 탐구하는 작업은 거의 없었다. 본 논문은 모든 것을 확인하는 <code>global approach</code>과 일부만 보는 <code>local approach</code>라는 두 가지 <code>attentional</code> 메커니즘의 간단하고 효과적인 분류를 연구한다.</p>
+
+<p>최근에 제안된 모델들은 <code>encoder–decoder</code>구조에 속한다. <code>encoder–decoder</code>방법은 <code>encoder neural network</code>로 소스 문장을 <code>fixed-length vector</code>로 인코딩 한다. 그런 다음 디코더는 인코딩된 <code>fixed-length vector</code>을 통해서 번역을 진행한다. 상식적으로 작은 <code>fixed-length vector</code> 하나로는 소스 문장이 길면 길수록 문장의 정보를 담기 힘들것이다. 실제로 입력 문장의 길이가 증가함에 따라 <code>encoder–decoder</code>의 성능이 급속히 저하된다.</p>
+
+<p>이 문제를 해결하기 위해 모델이 자동으로 <code>Soft-alignments</code> 이하 <code>attention</code>작업을 진행한다.</p>
+
+<h3 id="soft-alignmentattention-vs-hard-alignment">Soft-alignment(attention) VS Hard-alignment</h3>
+<ul>
+  <li><code>Soft-alignment(attention)</code> : 영어 -&gt; 한글 번역으로 예를 들자면 ‘I’가 ‘나’라는 정보를 컴퓨터 스스로 학습하는 것이다.</li>
+  <li><code>Hard-alignment</code> : 예를 들면 위에 ‘I’가 ‘나’라는 정보를 사람이 직접 입력하는 것이다.</li>
+</ul>
+
+<p>이 접근법의 가장 중요한 특징 중 하나는 전체 입력 문장을 하나의 <code>fixed-length vector</code>로 인코딩하려고 시도하지 않는다는 것이다. 대신에, 디코딩을 진행할 때마다 번역된 단어가 위와 같이 관련된 문장을 찾는다. 우리는 이 방법으로 모델이 긴 문장에 더 잘 대처할 수 있게 한다는 것을 보여준다.</p>
+
+<h2 id="3-learning-to-align-and-translate">3 LEARNING TO ALIGN AND TRANSLATE</h2>
+<p>이 절에서 이 논문에 모델을 이야기한다. 인코더에서 <code>양방향 RNN</code>을 사용한다. 따라서 번역을 할 때 이전에 나온 단어 뿐만 아니라 다음에 나올 단어들까지 보면서 정확도를 높이겠다는 의미를 가진다. 디코딩 과정에서 위에서 설명한 <code>attention</code>을 통해 번역할 문장에 해당하는 소스문장을 찾는다. 아래 그림으로 전체구조를 볼 수 있다.</p>
+
+<p><img src="http://localhost:4000/images/NEURAL_MACHINE_TRANSLATION_BY_JOINTLY_LEARNING_TO_ALIGN_AND_TRANSLATE2.JPG" alt="" /></p>
+
+<h3 id="31-decoder-general-description">3.1 DECODER: GENERAL DESCRIPTION</h3>
+<p>이 구조에서 새로운 조건부 확률을 정의한다.</p>
+
+<p><img src="http://localhost:4000/images/NEURAL_MACHINE_TRANSLATION_BY_JOINTLY_LEARNING_TO_ALIGN_AND_TRANSLATE3.JPG" alt="" /></p>
+
+<p><code>si</code>는 시간 <code>i</code>에 대한 <code>RNN</code>의 <code>hidden state</code>로 다음과 같이 계산된다.</p>
+
+<p><img src="http://localhost:4000/images/NEURAL_MACHINE_TRANSLATION_BY_JOINTLY_LEARNING_TO_ALIGN_AND_TRANSLATE4.JPG" alt="" /></p>
+
+<p>이 식은 <code>RNN 과정</code>을 통해서 이전에 나온 것들과 <code>ci</code>부분을 통해서 다음번 단어를 생성한다는 의미이다.<br />
+여기서 주목할만한 점은 <code>ci</code> 부분이다. 나머지 부분은 일반적인 <code>RNN</code> 구조를 가지지만 <code>ci</code>는 <code>attention</code> 과정을 의미한다. 계산 방법은 다음과 같다.</p>
+
+<p><img src="http://localhost:4000/images/NEURAL_MACHINE_TRANSLATION_BY_JOINTLY_LEARNING_TO_ALIGN_AND_TRANSLATE5.JPG" alt="" /></p>
+
+<p><code>ci</code>는 <code>hj</code>와 <code>알파</code>의 곱으로 쓰인다. <code>hj</code>는 입력 시퀀스의 <code>j</code> 번째 단어라고 생각하면 된다.</p>
+
+<p><code>알파</code>를 계산하는 방법은 다음과 같다.</p>
+
+<p><img src="http://localhost:4000/images/NEURAL_MACHINE_TRANSLATION_BY_JOINTLY_LEARNING_TO_ALIGN_AND_TRANSLATE6.JPG" alt="" /></p>
+
+<p><code>알파</code>는 소프트맥스를 통해 <code>eij</code>에 대한 확률값을 가진다. 
+<code>e</code>값은 다음과 같이 계산한다. <code>a</code>함수는 <code>alignment model</code>로 특정 j번째 입력 <code>hidden starte</code>와 직전에 만들어낸 단어의 <code>hidden starte</code> 사이의 관계값이다.</p>
+
+<p><img src="http://localhost:4000/images/NEURAL_MACHINE_TRANSLATION_BY_JOINTLY_LEARNING_TO_ALIGN_AND_TRANSLATE7.JPG" alt="" /></p>
+
+<p><code>a</code>함수를 풀어쓰면 위와 같은 식이 된다. 출력 네트워크의 <code>hidden starte</code>와 인코더 네트워크의 <code>hidden starte</code>를 합치고 <code>tanh</code>를 진행한다. 즉 이것도 하나의 <code>뉴런네트워크</code>이다. <code>Vhj</code>는 이미 계산된 값이며 <code>Wsi-1</code> 값만 계속해서 계산하면 된다.</p>
+
+<p>여기서 <code>i</code>는 변수로 출력하는 <code>word</code>의 <code>index</code>를 나타낸다. 즉 <code>word</code>를 만들 때마다 새롭게 계산된다. 그러므로 긴 문장이어도 <code>attention</code> 기법을 통해서 <code>attention</code> 기법을 사용하지 않는 방식보다 훨씬 높은 정확도를 가진다.</p>
+
+<h3 id="32-encoder-bidirectional-rnn-for-annotating-sequences">3.2 ENCODER: BIDIRECTIONAL RNN FOR ANNOTATING SEQUENCES</h3>
+<p><code>일반 RNN</code>은 <code>input sequence x</code>를 순방향으로만 계산한다. 번역 등을 할때는 이전 단어뿐만 아니라 다음 단어도 학습하길 원한다. 그래서 역방향까지 학습하는 <code>양방향 RNN</code>을 사용한다. 그리고 최근 음성 인식 쪽에서도 성공적으로 적용되었다고 한다. 참고 <a href="https://arxiv.org/pdf/1308.0850.pdf">(see, e.g., Graves et al., 2013).</a></p>
+
+<p><code>양방향 RNN</code>은 순방향과 역방향 2개의 <code>RNN</code>으로 구성된다. 순방향은 <code>1,2,3,...,T</code> 까지 역방향은 <code>T,....,2,1</code>로 계산한다.</p>
+
+<p><img src="http://localhost:4000/images/NEURAL_MACHINE_TRANSLATION_BY_JOINTLY_LEARNING_TO_ALIGN_AND_TRANSLATE8.JPG" alt="" /></p>
+
+<p>그리고 순방향과 역방향을 <code>concatenating</code>하여 <code>hj</code>를 구한다.</p>
+
+<p>이 방법을 통해서 <code>hj</code>는 <code>j</code>번째 단어 앞뒤의 정보를 모두 알 수 있게 된다.</p>
+
+<h2 id="4-experiment-settings">4 EXPERIMENT SETTINGS</h2>
+
+<p>대표적으로 <code>English-French</code>번역을 가지고 테스트를 했다. <code>348M</code>개의 데이터로 테스트를 했다.</p>
+
+<p><code>Hidden units</code>를 1000개로 계산한다. 그런데 이 모델을 <code>양방향 RNN</code>으로 순방향 1000개 역방향 1000개로 <code>일반 RNN</code>보다 좀 더 많은 <code>Hidden units</code>를 가지고 있다.</p>
+
+<p><code>SGD</code>와 <code>Adadelta</code>를 사용했다. 각 <code>SGD</code> 업데이트 방향은 <code>80 sentences</code>의 <code>minibatch</code>를 사용하여 계산했다.</p>
+
+<h3 id="성능">성능</h3>
+
+<p><img src="http://localhost:4000/images/NEURAL_MACHINE_TRANSLATION_BY_JOINTLY_LEARNING_TO_ALIGN_AND_TRANSLATE1.JPG" alt="" /></p>
+
+<p><img src="http://localhost:4000/images/NEURAL_MACHINE_TRANSLATION_BY_JOINTLY_LEARNING_TO_ALIGN_AND_TRANSLATE9.JPG" alt="" /></p>
+
+<p>처음에 보여준 그림과 같이 <code>RNNsearch</code>가 해당 모델이고, <code>RNNenc</code>가 이전 모델이다. 큰 성능 향상을 보였고 문장의 길이가 길어져도 급감하는 현상이 적어졌다. 그리고 트레이닝을 <code>50개</code>짜리로 더 많이 했을 때 더 높은 성능을 보여준다. <code>*</code>이 붙은 게 매우 오랫동안 학습을 한 경우인데, <code>No UNK</code> 즉 모르는 단어를 제외하면 <code>open source smt</code>로 유명한 <code>Moses</code>보다 높은 성능을 보여준다. 간단한 모델을 통해서 <code>Moses</code>보다 높은 성능을 발휘하는 것은 대단한 성과이다.</p>
+
+<h2 id="5-results">5 RESULTS</h2>
+
+<p><img src="http://localhost:4000/images/NEURAL_MACHINE_TRANSLATION_BY_JOINTLY_LEARNING_TO_ALIGN_AND_TRANSLATE10.JPG" alt="" /></p>
+
+<p>위 그림은 <code>x축</code>으로 <code>입력 sentences</code>, <code>y축</code>으로는 <code>출력 sentences</code>를 차례대로 썼고 각 네모의 밝기가 <code>알파</code> 값이다. 즉 밝을수록 관련이 높은 것이다. 불어와 는 일반적으로 어순이 비슷하여 무난하게 가기도 하지만 어떨 때는 어순이 거꾸로 일 때도 있다. 그리고 여러 정관사도 <code>1:n</code>으로 있을 수도 있는데 이럴 때도 <code>attention</code>이 해당하는 부분을 잘 처리하는 것을 그림을 통해 볼 수 있다.</p>
+
+<p><img src="http://localhost:4000/images/NEURAL_MACHINE_TRANSLATION_BY_JOINTLY_LEARNING_TO_ALIGN_AND_TRANSLATE11.JPG" alt="" /></p>
+
+<p>일반적인 <code>seq2seq</code>모델의 문제점인 초반에는 번역이 잘 됐다가 문장이 길어지면 해석이 잘 안 되는 경향이 있는데 <code>attention</code>을 적용하여 긴 문장도 해석이 잘 된다고 한다.</p>
+
+<p><img src="http://localhost:4000/images/NEURAL_MACHINE_TRANSLATION_BY_JOINTLY_LEARNING_TO_ALIGN_AND_TRANSLATE12.JPG" alt="" /><br />
+(구글 번역기를 돌려보니 뭔가 잘 되는 거 같다.)</p>
+
+            </div>
+        </article>
+        <div class="cf"></div>
+        <div class="row text-center">
+            <section class="notepad-post-share">
+                <a class="twitter-icon" href="https://twitter.com/intent/tweet?text=&quot;Effective Approaches to Attention-based Neural Machine Translation 논문 리뷰&quot;%20http://localhost:4000/post_try/2019-03-08-Effective-Approaches-to-Attention-based-Neural-Machine-Translation-%B3%ED%B9%AE-%B8%AE%BA%E4%20via%20&#64;"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="facebook-icon" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/post_try/2019-03-08-Effective-Approaches-to-Attention-based-Neural-Machine-Translation-%B3%ED%B9%AE-%B8%AE%BA%E4"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Share on Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="google-icon" href="https://plus.google.com/share?url=http://localhost:4000/post_try/2019-03-08-Effective-Approaches-to-Attention-based-Neural-Machine-Translation-%B3%ED%B9%AE-%B8%AE%BA%E4"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" title="Share on Google+">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+            </section>
+        </div>
+        <div class="cf"></div>
+        
+            <div class="notepad-author-info">
+                <div class="row">
+                    <section class="notepad-post-author small-12 columns">
+                        
+                            <img src="http://localhost:4000/images/lsh58.jpg" class="notepad-post-author-avatar" alt="SeungHyun Lee's photo">
+                        
+                        
+                            <span class="author-label">Author</span>
+                            <h1>SeungHyun Lee</h1>
+                        
+                        
+                            <p><a href="mailto:tmdgus508@naver.com" class="author-website">tmdgus508@naver.com</a></p>
+                        
+                        
+                            <p>A person longing for any dream for a long time  resembles that dream at last .</p>
+                        
+                    </section>
+                </div>
+            </div> 
+        
+        <div class="cf"></div>
+        
+        <section class="notepad-disqus row">
+    <div class="small-12 columns">
+        <h1 class="notepad-comments-header">Comments</h1>
+        <div id="disqus_thread"></div>
+        <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://newhiwoong.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+    </div>
+</section>
+
+        <div class="cf"></div>
+
+    <footer class="notepad-site-footer">
+    <div class="copyright">
+        <section>
+            All content copyright <a href="http://localhost:4000/about">SeungHyun Lee</a> &copy; 2020 &bull; All rights
+            reserved.
+        </section>
+        <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a></section>
+    </div>
+    <div class="social-icons">
+           
+        <a href="http://github.com/lsh58">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+        </a>
+         
+    </div>
+
+    <div class="cf"></div>
+</footer>
+ 
+</main>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="http://localhost:4000/assets/js/vendor/modernizr.js"></script>
+    <script src="http://localhost:4000/assets/js/foundation.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/background-check.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/post-header-animations.js"></script>
+    <script src="http://localhost:4000/assets/js/notepad.js"></script>
+    <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/nprogress.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+    <script type='text/javascript'>console.log("HMFaysal Notepad Theme Version 2.0");</script>
+    <script type='text/javascript'>console.log("https://alum.mit.edu/www/hmfaysal");</script>
+
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133319432-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-133319432-1');
+</script> 
+</body>
+</html>
