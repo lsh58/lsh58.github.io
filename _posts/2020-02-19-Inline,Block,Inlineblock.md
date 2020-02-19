@@ -23,7 +23,7 @@ text 크기만큼만 공간을 점유하고 줄바꿈을 하지 않습니다.
 대표적인 inline 엘리먼트로 <span class="orage"> < span > </span>이나 <span class="orage">< a ></span>, <span class="orage">< em ></span> 태그 등을 들 수 있습니다.
 
 <span class="blackbox">width/height 적용불가</span>  
-<br>  
+<br>
 <span class="blackbox">margin/padding-top/bottom 적용불가</span>  
-<br>  
+<br>
 <span class="blackbox">line-height를 원하는대로 사용할 수 없다.</span>
