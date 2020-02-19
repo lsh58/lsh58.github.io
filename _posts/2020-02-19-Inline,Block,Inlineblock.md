@@ -29,7 +29,8 @@ text 크기만큼만 공간을 점유하고 줄바꿈을 하지 않습니다.
 # Display속성 : Block
 
 display 속성이 block으로 지정된 엘리먼트는 전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지합니다.  
-대표적인 block 엘리먼트로 <span class="orange">< div ></span>이나 <span class="orange">< p ></span>, <span class="orange">< h1 ></span> 태그 등을 들 수 있습니다.  
+대표적인 block 엘리먼트로 <span class="orange">< div ></span>이나 <span class="orange">< p ></span>, <span class="orange">< h1 ></span> 태그 등을 들 수 있습니다.
+
 <span class="blackbox">한 줄을 차지합니다.</span>
 
 <span class="blackbox">width, height, margin, padding 속성이 모두 반영이 됩니다.</span>
