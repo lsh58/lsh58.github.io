@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Inline,Block,Inlineblock"
+title: "Inline, Block, Inlineblock"
 description:
 headline:
 modified: 2020-02-17
