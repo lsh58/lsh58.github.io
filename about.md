@@ -32,4 +32,4 @@ This is my personal blog. It currently has {{ site.posts | size }} posts in {{ s
 
 <h2>Connect</h2>
 ✉️ [tmdgus508@naver.com]()  
-🌐 [https://github.com/lsh58](https://github.com/lsh58)
+ [https://github.com/lsh58](https://github.com/lsh58)
