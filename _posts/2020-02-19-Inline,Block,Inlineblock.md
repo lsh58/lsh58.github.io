@@ -14,9 +14,7 @@ comments: true
 featured: true
 ---
 
-# Display속성 : Inline,Block,Inlineblock
-
-## inline
+# Display속성 : Inline
 
 display 속성이 inline으로 지정된 엘리먼트는 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치됩니다.  
 text 크기만큼만 공간을 점유하고 줄바꿈을 하지 않습니다.  
