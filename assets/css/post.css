@@ -56,7 +56,7 @@ html, body, .notepad-post-container, .notepad-post-header {
 
 .code{
   width: 100%;
-  padding : 0 20%;
+  padding : 0 40%;
 }
 
 .post-template {
@@ -137,10 +137,17 @@ html, body, .notepad-post-container, .notepad-post-header {
       text-transform: uppercase; }
       @media only screen and (min-width: 40.063em) {
         .post-template .notepad-post-title h1 {
-          font-size: 3.125rem; } }
+          font-size: 3.125rem; }
+          .code{
+            width: 100%;
+            padding : 0 5%;
+          } }
       @media only screen and (min-width: 70em) {
         .post-template .notepad-post-title h1 {
-          font-size: 4.375rem; } }
+          font-size: 4.375rem; }.code{
+            width: 100%;
+            padding : 0 10%;
+          } }
       @media only screen and (min-width: 90em) {
         .post-template .notepad-post-title h1 {
           font-size: 5.3125rem; } }
