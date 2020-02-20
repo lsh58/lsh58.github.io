@@ -77,7 +77,7 @@ CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다
 큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.
 
 <div class="code">
-<iframe width="100%" height="300" src="//jsfiddle.net/lsh58/7mnfa5qL/6/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="350" src="//jsfiddle.net/lsh58/7mnfa5qL/6/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 </div>
 
 만약@media (min-width: 768px) { ... }까지만 작성하고
@@ -117,7 +117,7 @@ CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다
 큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.
 
 <div class="code">
-<iframe width="100%" height="300" src="//jsfiddle.net/lsh58/7mnfa5qL/10/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="330" src="//jsfiddle.net/lsh58/7mnfa5qL/10/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 </div>
 
 <br>
