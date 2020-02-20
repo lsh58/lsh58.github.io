@@ -22,7 +22,9 @@ Media Query 는 CSS3 에 포함되어 있으며, 자바스크립트 등을 사�
 
 미디어 쿼리의 기본적인 형태는 다음과 같다.
 
-<iframe width="50%" height="300" src="//jsfiddle.net/lsh58/7mnfa5qL/1/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>  
+<div class="code">
+<iframe width="100%" height="300" src="//jsfiddle.net/lsh58/7mnfa5qL/1/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+</div>
   
 Only 혹은 Not 키워드를 사용하여 Media Type 을 정해주고, and 연산자를 사용하여 조건식을 묶어준다. 조건식은 Feature: Value 형식으로 작성한다. 실행문에는 일반적인 CSS 코드를 넣는다. 실행문에 넣어준 CSS 코드는 조건이 만족할때만 적용되며 그 이외에 상황에서는 적용되지 않는다.
 
@@ -42,4 +44,6 @@ aspect-ratio (max-aspect-ratio, min-aspect-ratio)
 
 반응형웹을 만들기 위해 자주 사용되는 대표적인 세가지 max-width값은 다음과 같다.
 
-<iframe width="50%" height="300" src="//jsfiddle.net/lsh58/7mnfa5qL/2/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<div class="code">
+<iframe width="100%" height="300" src="//jsfiddle.net/lsh58/7mnfa5qL/2/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+</div>
