@@ -143,7 +143,7 @@ html, body, .notepad-post-container, .notepad-post-header {
         .post-template .notepad-post-title h1 {
           font-size: 4.375rem; }.code{
             width: 100%;
-            padding : 0 10%;
+            padding : 0;
           } }
       @media only screen and (min-width: 90em) {
         .post-template .notepad-post-title h1 {
