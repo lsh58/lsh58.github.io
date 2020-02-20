@@ -16,7 +16,7 @@ featured: true
 
 # Media Query
 
-Media Query 는 CSS3 에 포함되어 있으며, 자바스크립트 등을 사용하지 않고도 특정 요소에 해상도별로 대응하는 스타일을 각각 적용시킬 수 있도록 해준다. 정확히는 Media Type 를 이용한 표현식을 통해 스타일의 적용 범위를 한정할 수 있다. Media Query 는 Media Type 과 하나 이상의 Width, Height 와 같은 Media Feature로 이루어진 조건식으로 구성된다. 이때 Media Type 은 CSS가 해석되는 디바이스의 종류에 따라 각기 다른 스타일을 적용할 수 있도록 해주며, Only 혹은 Not 키워드로 명시하지 않는한 Media Type은 선택적이며 all 타입으로 간주 된다. Media Type은 모든 디바이스에 대응되는 all, 컴퓨터 화면과 스마트폰 화면에 대응되는 screen, 프린트 용도에 대응되는 print 를 포함한 많은 타입을 가지고 있다.
+Media Query 는 CSS3 에 포함되어 있으며, 자바스크립트 등을 사용하지 않고도 특정 요소에 <span class="orange">해상도별로 대응하는 스타일을 각각 적용시킬 수 있도록 해준다. 정확히는 Media Type 를 이용한 표현식을 통해 스타일의 적용 범위를 한정할 수 있다. Media Query 는 Media Type 과 하나 이상의 Width, Height 와 같은 Media Feature로 이루어진 조건식으로 구성된다. 이때 Media Type 은 CSS가 해석되는 디바이스의 종류에 따라 각기 다른 스타일을 적용할 수 있도록 해주며, Only 혹은 Not 키워드로 명시하지 않는한 Media Type은 선택적이며 all 타입으로 간주 된다. Media Type은 모든 디바이스에 대응되는 all, 컴퓨터 화면과 스마트폰 화면에 대응되는 screen, 프린트 용도에 대응되는 print 를 포함한 많은 타입을 가지고 있다.
 
 ## 기본설정
 
