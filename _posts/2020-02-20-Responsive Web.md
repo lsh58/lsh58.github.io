@@ -67,11 +67,11 @@ Breakpoints는 부트스트랩(Bootstrap)을 참조하였으며 그에 해당하
 모바일 퍼스트로 개발할 경우는 미디어쿼리도 max-width가 아니라 min-width방식으로 지정하여 사용하고
 CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다.
 
-가장 작은 디바이스 : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.  
-모바일 디바이스 : 가로 해상도가 576px 보다 큰 경우의 모바일 디바이스에 대한 CSS를 작성합니다.  
-태블릿 디바이스 : 가로 해상도가 768px 보다 큰 경우의 테블릿 디바이스에 대한 CSS를 작성합니다.  
-데스크탑 : 가로 해상도가 992px 보다 큰 경우의 데스크탑에 대한 CSS를 작성합니다.  
-큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.  
+<span class="gray">가장 작은 디바이스</span> : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.  
+<span class="gray">모바일 디바이스</span> : 가로 해상도가 576px 보다 큰 경우의 모바일 디바이스에 대한 CSS를 작성합니다.  
+<span class="gray">태블릿 디바이스</span> : 가로 해상도가 768px 보다 큰 경우의 테블릿 디바이스에 대한 CSS를 작성합니다.  
+<span class="gray">데스크탑</span> : 가로 해상도가 992px 보다 큰 경우의 데스크탑에 대한 CSS를 작성합니다.  
+<span class="gray">큰화면의 데스크탑</span> : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.  
 
 <div class="code">
 <iframe width="100%" height="350" src="//jsfiddle.net/lsh58/7mnfa5qL/6/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
@@ -87,11 +87,11 @@ CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다
 데스크탑 화면이 중요하거나 또는 기존에 개발되어 있던 데스크탑 화면의 CSS에 모바일 화면에 대한 추가 개발을 해야 할 경우에 많이 사용합니다.
 이럴경우 모바일 퍼스트로 개발하는 것과 반대로 미디어쿼리도 min-width가 아니라 max-width방식으로 지정하여 사용 합니다.
 
-가장 작은 디바이스 : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.  
-모바일 디바이스 : 가로 해상도가 576px 보다 큰 경우의 모바일 디바이스에 대한 CSS를 작성합니다.  
-태블릿 디바이스 : 가로 해상도가 768px 보다 큰 경우의 테블릿 디바이스에 대한 CSS를 작성합니다.  
-데스크탑 : 가로 해상도가 992px 보다 큰 경우의 데스크탑에 대한 CSS를 작성합니다.  
-큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.  
+<span class="gray">가장 작은 디바이스</span> : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.  
+<span class="gray">모바일 디바이스</span> : 가로 해상도가 576px 보다 큰 경우의 모바일 디바이스에 대한 CSS를 작성합니다.  
+<span class="gray">태블릿 디바이스</span> : 가로 해상도가 768px 보다 큰 경우의 테블릿 디바이스에 대한 CSS를 작성합니다.  
+<span class="gray">데스크탑</span> : 가로 해상도가 992px 보다 큰 경우의 데스크탑에 대한 CSS를 작성합니다.  
+<span class="gray">큰화면의 데스크탑</span> : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.  
 
 <div class="code">
 <iframe width="100%" height="300" src="//jsfiddle.net/lsh58/7mnfa5qL/8/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
@@ -107,11 +107,11 @@ CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다
 미디어쿼리를 가장 작은 해상도와 가장 큰 해상도의 범위를 명확히 지정하여 사용 합니다.  
 이럴경우 미디어쿼리는 min-width와 max-width를 동시에 지정하여 사용 합니다.  
 
-가장 작은 디바이스 : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.  
-모바일 디바이스 : 가로 해상도가 576px 보다 크고 767px보다 작은 모바일 디바이스에 대한 CSS를 작성합니다.  
-태블릿 디바이스 : 가로 해상도가 768px 보다 크고 991px보다 작은 테블릿 디바이스에 대한 CSS를 작성합니다.  
-데스크탑 : 가로 해상도가 992px 보다 큰고 1199px보다 작은 데스크탑에 대한 CSS를 작성합니다.  
-큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.  
+<span class="gray">가장 작은 디바이스</span> : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.  
+<span class="gray">모바일 디바이스</span> : 가로 해상도가 576px 보다 크고 767px보다 작은 모바일 디바이스에 대한 CSS를 작성합니다.  
+<span class="gray">태블릿 디바이스</span> : 가로 해상도가 768px 보다 크고 991px보다 작은 테블릿 디바이스에 대한 CSS를 작성합니다.  
+<span class="gray">데스크탑</span> : 가로 해상도가 992px 보다 큰고 1199px보다 작은 데스크탑에 대한 CSS를 작성합니다.  
+<span class="gray">큰화면의 데스크탑</span> : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.  
 
 <div class="code">
 <iframe width="100%" height="330" src="//jsfiddle.net/lsh58/7mnfa5qL/10/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
