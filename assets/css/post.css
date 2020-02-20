@@ -54,10 +54,7 @@ html, body, .notepad-post-container, .notepad-post-header {
   border-bottom: 2px solid red;
 }
 
-.code{
-  width: 100%;
-  padding : 0 40%;
-}
+
 
 .post-template {
   /* Header */
