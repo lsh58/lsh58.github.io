@@ -47,3 +47,6 @@ aspect-ratio (max-aspect-ratio, min-aspect-ratio)
 <div class="code">
 <iframe width="100%" height="300" src="//jsfiddle.net/lsh58/7mnfa5qL/2/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 </div>
+
+출처 : <https://hudi.kr/css3-media-query-%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-%EB%B0%98%EC%9D%91%ED%98%95-%EC%9B%B9-%EB%A7%8C%EB%93%A4%EA%B8%B0/>
+<https://blog.stories.pe.kr/199>
