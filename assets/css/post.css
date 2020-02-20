@@ -54,9 +54,9 @@ html, body, .notepad-post-container, .notepad-post-header {
   border-bottom: 2px solid red;
 }
 
-iframe{
-  display: block;
-  margin: 0 auto;
+.code{
+  width: 100%;
+  margin : 0 10%;
 }
 
 .post-template {
