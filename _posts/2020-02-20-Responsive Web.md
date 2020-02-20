@@ -96,7 +96,9 @@ CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다
 데스크탑 : 가로 해상도가 992px 보다 큰 경우의 데스크탑에 대한 CSS를 작성합니다.
 큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.
 
+<div class="code">
 <iframe width="100%" height="300" src="//jsfiddle.net/lsh58/7mnfa5qL/8/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+</div>
 
 만약 @media (max-width: 767px) { ... }까지만 작성하고
 @media (max-width: 575px) { ... }에 대한 미디어쿼리를 작성하지 않았다면..
@@ -114,7 +116,9 @@ CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다
 데스크탑 : 가로 해상도가 992px 보다 큰고 1199px보다 작은 데스크탑에 대한 CSS를 작성합니다.
 큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.
 
+<div class="code">
 <iframe width="100%" height="300" src="//jsfiddle.net/lsh58/7mnfa5qL/10/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+</div>
 
 출처 : <https://hudi.kr/css3-media-query-%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-%EB%B0%98%EC%9D%91%ED%98%95-%EC%9B%B9-%EB%A7%8C%EB%93%A4%EA%B8%B0/>
 <https://blog.stories.pe.kr/199>
