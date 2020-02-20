@@ -43,14 +43,14 @@ Only 혹은 Not 키워드를 사용하여 Media Type 을 정해주고, and 연�
 
 ## 조건식을 이루는 대표적인 Media Feature
 
-<span class="orange">width (max-width, min-width) / height (max-height, min-height)</span>
-뷰포트의 너비와 높이를 나타낸다. 뷰포트의 크기는 HTML 컨텐츠의 내용을 표시하는 전체적인 크기를 말하며, 화면의 크기와는 거리가 있는 개념이다.
-<span class="orange">device-width / device-height</span>
-디바이스가 출력할 수 있는 영역의 크기, 즉 스크린의 해상도를 의미한다.
-<span class="orange">orientation</span>
-화면이 세로모드인지 가로모드인지 판단할 수 있다. 이를 판단하는 기준은 뷰포트의 너비와 높이의 비율이다.
-<span class="orange">aspect-ratio (max-aspect-ratio, min-aspect-ratio)</span>
-스크린의 너비와 높이의 비율. Value 는 너비/높이 형태로 작성한다. 너비와 높이의 비율을 4:5로 하고싶다면 4/5로 작성하면 된다.
+<span class="orange">width (max-width, min-width) / height (max-height, min-height)</span>  
+뷰포트의 너비와 높이를 나타낸다. 뷰포트의 크기는 HTML 컨텐츠의 내용을 표시하는 전체적인 크기를 말하며, 화면의 크기와는 거리가 있는 개념이다.  
+<span class="orange">device-width / device-height</span>  
+디바이스가 출력할 수 있는 영역의 크기, 즉 스크린의 해상도를 의미한다.  
+<span class="orange">orientation</span>  
+화면이 세로모드인지 가로모드인지 판단할 수 있다. 이를 판단하는 기준은 뷰포트의 너비와 높이의 비율이다.  
+<span class="orange">aspect-ratio (max-aspect-ratio, min-aspect-ratio)</span>  
+스크린의 너비와 높이의 비율. Value 는 너비/높이 형태로 작성한다. 너비와 높이의 비율을 4:5로 하고싶다면 4/5로 작성하면 된다.  
 
 ## 미디어쿼리 지정
 
