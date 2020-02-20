@@ -149,7 +149,7 @@ html, body, .notepad-post-container, .notepad-post-header {
         .post-template .notepad-post-title h1 {
           font-size: 5.3125rem; }  .code{
             width: 100%;
-            padding : 0 40%;
+            padding : 0 30%;
           } }
     .post-template .notepad-post-title.background--light h1 {
       color: black; }
