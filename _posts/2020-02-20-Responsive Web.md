@@ -16,14 +16,14 @@ featured: true
 
 # Media Query
 
-Media Query 는 CSS3 에 포함되어 있으며, 자바스크립트 등을 사용하지 않고도 특정 요소에 <span class="orange">해상도별로 대응하는 스타일을 각각 적용시킬 수 있도록 해준다. 정확히는 Media Type 를 이용한 표현식을 통해 스타일의 적용 범위를 한정할 수 있다. Media Query 는 Media Type 과 하나 이상의 Width, Height 와 같은 Media Feature로 이루어진 조건식으로 구성된다. 이때 Media Type 은 CSS가 해석되는 디바이스의 종류에 따라 각기 다른 스타일을 적용할 수 있도록 해주며, Only 혹은 Not 키워드로 명시하지 않는한 Media Type은 선택적이며 all 타입으로 간주 된다. Media Type은 모든 디바이스에 대응되는 all, 컴퓨터 화면과 스마트폰 화면에 대응되는 screen, 프린트 용도에 대응되는 print 를 포함한 많은 타입을 가지고 있다.
+Media Query 는 CSS3 에 포함되어 있으며, 자바스크립트 등을 사용하지 않고도 특정 요소에 <span class="orange">해상도별로 대응하는 스타일을 각각 적용시킬 수 있도록 해준다.</span> 정확히는 Media Type 를 이용한 표현식을 통해 <span class="orange">스타일의 적용 범위를 한정할 수 있다.</span> Media Query 는 Media Type 과 하나 이상의 Width, Height 와 같은 Media Feature로 이루어진 조건식으로 구성된다. 이때 Media Type 은 CSS가 해석되는 디바이스의 종류에 따라 각기 다른 스타일을 적용할 수 있도록 해주며, Only 혹은 Not 키워드로 명시하지 않는한 Media Type은 선택적이며 all 타입으로 간주 된다. Media Type은 모든 디바이스에 대응되는 all, 컴퓨터 화면과 스마트폰 화면에 대응되는 screen, 프린트 용도에 대응되는 print 를 포함한 많은 타입을 가지고 있다.
 
 ## 기본설정
 
-반응형웹을 적용하기 위해서는 먼저 meta viewport를 설정해 줘야 합니다.
-meta viewport의 width를 device-width로 지정하고 initial-scale을 1로 설정을 해 줘야 합니다.
-width=device-width : 화면의 넓이를 디바이스(단말기)의 넓이로 지정
-initial-scale=1 : 기본 사이즈를 1로 지정하겠다고 선언
+반응형웹을 적용하기 위해서는 먼저 <span class="gray">meta viewport</span>를 설정해 줘야 합니다.  
+meta viewport의 width를 device-width로 지정하고 initial-scale을 1로 설정을 해 줘야 합니다.  
+<span class="orange">width=device-width</span> : 화면의 넓이를 디바이스(단말기)의 넓이로 지정  
+<span class="orange">initial-scale=1</span> : 기본 사이즈를 1로 지정하겠다고 선언
 
 <div class="code">
 <iframe width="100%" height="100" src="//jsfiddle.net/lsh58/7mnfa5qL/5/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
@@ -43,16 +43,13 @@ Only 혹은 Not 키워드를 사용하여 Media Type 을 정해주고, and 연�
 
 ## 조건식을 이루는 대표적인 Media Feature
 
-width (max-width, min-width) / height (max-height, min-height)
+<span class="orange">width (max-width, min-width) / height (max-height, min-height)</span>
 뷰포트의 너비와 높이를 나타낸다. 뷰포트의 크기는 HTML 컨텐츠의 내용을 표시하는 전체적인 크기를 말하며, 화면의 크기와는 거리가 있는 개념이다.
-
-device-width / device-height
+<span class="orange">device-width / device-height</span>
 디바이스가 출력할 수 있는 영역의 크기, 즉 스크린의 해상도를 의미한다.
-
-orientation
+<span class="orange">orientation</span>
 화면이 세로모드인지 가로모드인지 판단할 수 있다. 이를 판단하는 기준은 뷰포트의 너비와 높이의 비율이다.
-
-aspect-ratio (max-aspect-ratio, min-aspect-ratio)
+<span class="orange">aspect-ratio (max-aspect-ratio, min-aspect-ratio)</span>
 스크린의 너비와 높이의 비율. Value 는 너비/높이 형태로 작성한다. 너비와 높이의 비율을 4:5로 하고싶다면 4/5로 작성하면 된다.
 
 ## 미디어쿼리 지정
@@ -66,15 +63,15 @@ Breakpoints는 부트스트랩(Bootstrap)을 참조하였으며 그에 해당하
 
 ### 모바일 퍼스트 개발
 
-반응형 웹개발에 있어서 모바일 퍼스트 개발은 근래에 선호되는 방법입니다.
+반응형 웹개발에 있어서 모바일 퍼스트 개발은 근래에 선호되는 방법입니다.  
 모바일 퍼스트로 개발할 경우는 미디어쿼리도 max-width가 아니라 min-width방식으로 지정하여 사용하고
 CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다.
 
-가장 작은 디바이스 : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.
-모바일 디바이스 : 가로 해상도가 576px 보다 큰 경우의 모바일 디바이스에 대한 CSS를 작성합니다.
-태블릿 디바이스 : 가로 해상도가 768px 보다 큰 경우의 테블릿 디바이스에 대한 CSS를 작성합니다.
-데스크탑 : 가로 해상도가 992px 보다 큰 경우의 데스크탑에 대한 CSS를 작성합니다.
-큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.
+가장 작은 디바이스 : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.  
+모바일 디바이스 : 가로 해상도가 576px 보다 큰 경우의 모바일 디바이스에 대한 CSS를 작성합니다.  
+태블릿 디바이스 : 가로 해상도가 768px 보다 큰 경우의 테블릿 디바이스에 대한 CSS를 작성합니다.  
+데스크탑 : 가로 해상도가 992px 보다 큰 경우의 데스크탑에 대한 CSS를 작성합니다.  
+큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.  
 
 <div class="code">
 <iframe width="100%" height="350" src="//jsfiddle.net/lsh58/7mnfa5qL/6/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
@@ -86,15 +83,15 @@ CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다
 
 ### 데스크탑 퍼스트 개발
 
-모바일퍼스트에 반대되는 개발 방법으로 예전에 많이 사용되었던 방식입니다.
+모바일퍼스트에 반대되는 개발 방법으로 예전에 많이 사용되었던 방식입니다.  
 데스크탑 화면이 중요하거나 또는 기존에 개발되어 있던 데스크탑 화면의 CSS에 모바일 화면에 대한 추가 개발을 해야 할 경우에 많이 사용합니다.
 이럴경우 모바일 퍼스트로 개발하는 것과 반대로 미디어쿼리도 min-width가 아니라 max-width방식으로 지정하여 사용 합니다.
 
-가장 작은 디바이스 : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.
-모바일 디바이스 : 가로 해상도가 576px 보다 큰 경우의 모바일 디바이스에 대한 CSS를 작성합니다.
-태블릿 디바이스 : 가로 해상도가 768px 보다 큰 경우의 테블릿 디바이스에 대한 CSS를 작성합니다.
-데스크탑 : 가로 해상도가 992px 보다 큰 경우의 데스크탑에 대한 CSS를 작성합니다.
-큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.
+가장 작은 디바이스 : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.  
+모바일 디바이스 : 가로 해상도가 576px 보다 큰 경우의 모바일 디바이스에 대한 CSS를 작성합니다.  
+태블릿 디바이스 : 가로 해상도가 768px 보다 큰 경우의 테블릿 디바이스에 대한 CSS를 작성합니다.  
+데스크탑 : 가로 해상도가 992px 보다 큰 경우의 데스크탑에 대한 CSS를 작성합니다.  
+큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.  
 
 <div class="code">
 <iframe width="100%" height="300" src="//jsfiddle.net/lsh58/7mnfa5qL/8/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
@@ -106,15 +103,15 @@ CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다
 
 ### 해상도 범위 지정 CSS 개발
 
-나머지는 CSS의 Override기능을 사용하지 않고 지정된 해상도를 설정하여 사용하는 방법입니다.
-미디어쿼리를 가장 작은 해상도와 가장 큰 해상도의 범위를 명확히 지정하여 사용 합니다.
-이럴경우 미디어쿼리는 min-width와 max-width를 동시에 지정하여 사용 합니다.
+나머지는 CSS의 Override기능을 사용하지 않고 지정된 해상도를 설정하여 사용하는 방법입니다.  
+미디어쿼리를 가장 작은 해상도와 가장 큰 해상도의 범위를 명확히 지정하여 사용 합니다.  
+이럴경우 미디어쿼리는 min-width와 max-width를 동시에 지정하여 사용 합니다.  
 
-가장 작은 디바이스 : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.
-모바일 디바이스 : 가로 해상도가 576px 보다 크고 767px보다 작은 모바일 디바이스에 대한 CSS를 작성합니다.
-태블릿 디바이스 : 가로 해상도가 768px 보다 크고 991px보다 작은 테블릿 디바이스에 대한 CSS를 작성합니다.
-데스크탑 : 가로 해상도가 992px 보다 큰고 1199px보다 작은 데스크탑에 대한 CSS를 작성합니다.
-큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.
+가장 작은 디바이스 : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.  
+모바일 디바이스 : 가로 해상도가 576px 보다 크고 767px보다 작은 모바일 디바이스에 대한 CSS를 작성합니다.  
+태블릿 디바이스 : 가로 해상도가 768px 보다 크고 991px보다 작은 테블릿 디바이스에 대한 CSS를 작성합니다.  
+데스크탑 : 가로 해상도가 992px 보다 큰고 1199px보다 작은 데스크탑에 대한 CSS를 작성합니다.  
+큰화면의 데스크탑 : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.  
 
 <div class="code">
 <iframe width="100%" height="330" src="//jsfiddle.net/lsh58/7mnfa5qL/10/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
