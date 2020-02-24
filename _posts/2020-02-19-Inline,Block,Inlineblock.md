@@ -52,5 +52,5 @@ inline-block 엘리먼트는 명시적으로 헤당 엘리먼트의 스타일을
 inline-block 사이에 공백이 생기게 되는데, parent 태그에 font-size: 0를 적용하면 해결된다.
 inline-block 끼리 높이가 안맞을 때 상위 공백이 생기게 되는데 vertical-align: top을 적용하면 해결할 수 있다.
 
-출처 : <https://www.daleseo.com/css-display-inline-block/>
+Reference : <https://www.daleseo.com/css-display-inline-block/>
 <https://ruden91.github.io/blog/inline-vs-block-vs-inline-block/>
