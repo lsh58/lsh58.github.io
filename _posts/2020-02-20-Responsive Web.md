@@ -119,5 +119,5 @@ CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다
 
 <br>
 
-출처 : <https://hudi.kr/css3-media-query-%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-%EB%B0%98%EC%9D%91%ED%98%95-%EC%9B%B9-%EB%A7%8C%EB%93%A4%EA%B8%B0/>
+Reference : <https://hudi.kr/css3-media-query-%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-%EB%B0%98%EC%9D%91%ED%98%95-%EC%9B%B9-%EB%A7%8C%EB%93%A4%EA%B8%B0/>
 <https://blog.stories.pe.kr/199>
