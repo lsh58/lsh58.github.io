@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Responsive Web"
+title: "CSS_Responsive Web"
 description:
 headline:
 modified: 2020-02-20
@@ -50,7 +50,7 @@ Only 혹은 Not 키워드를 사용하여 Media Type 을 정해주고, and 연�
 <span class="orange">orientation</span>  
 화면이 세로모드인지 가로모드인지 판단할 수 있다. 이를 판단하는 기준은 뷰포트의 너비와 높이의 비율이다.  
 <span class="orange">aspect-ratio (max-aspect-ratio, min-aspect-ratio)</span>  
-스크린의 너비와 높이의 비율. Value 는 너비/높이 형태로 작성한다. 너비와 높이의 비율을 4:5로 하고싶다면 4/5로 작성하면 된다.  
+스크린의 너비와 높이의 비율. Value 는 너비/높이 형태로 작성한다. 너비와 높이의 비율을 4:5로 하고싶다면 4/5로 작성하면 된다.
 
 ## 미디어쿼리 지정
 
@@ -71,7 +71,7 @@ CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다
 <span class="gray">모바일 디바이스</span> : 가로 해상도가 576px 보다 큰 경우의 모바일 디바이스에 대한 CSS를 작성합니다.  
 <span class="gray">태블릿 디바이스</span> : 가로 해상도가 768px 보다 큰 경우의 테블릿 디바이스에 대한 CSS를 작성합니다.  
 <span class="gray">데스크탑</span> : 가로 해상도가 992px 보다 큰 경우의 데스크탑에 대한 CSS를 작성합니다.  
-<span class="gray">큰화면의 데스크탑</span> : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.  
+<span class="gray">큰화면의 데스크탑</span> : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.
 
 <div class="code">
 <iframe width="100%" height="350" src="//jsfiddle.net/lsh58/7mnfa5qL/6/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
@@ -91,7 +91,7 @@ CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다
 <span class="gray">모바일 디바이스</span> : 가로 해상도가 576px 보다 큰 경우의 모바일 디바이스에 대한 CSS를 작성합니다.  
 <span class="gray">태블릿 디바이스</span> : 가로 해상도가 768px 보다 큰 경우의 테블릿 디바이스에 대한 CSS를 작성합니다.  
 <span class="gray">데스크탑</span> : 가로 해상도가 992px 보다 큰 경우의 데스크탑에 대한 CSS를 작성합니다.  
-<span class="gray">큰화면의 데스크탑</span> : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.  
+<span class="gray">큰화면의 데스크탑</span> : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.
 
 <div class="code">
 <iframe width="100%" height="300" src="//jsfiddle.net/lsh58/7mnfa5qL/8/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
@@ -105,13 +105,13 @@ CSS의 Override 특성을 활용하여 미디어쿼리를 작성하면 됩니다
 
 나머지는 CSS의 Override기능을 사용하지 않고 지정된 해상도를 설정하여 사용하는 방법입니다.  
 미디어쿼리를 가장 작은 해상도와 가장 큰 해상도의 범위를 명확히 지정하여 사용 합니다.  
-이럴경우 미디어쿼리는 min-width와 max-width를 동시에 지정하여 사용 합니다.  
+이럴경우 미디어쿼리는 min-width와 max-width를 동시에 지정하여 사용 합니다.
 
 <span class="gray">가장 작은 디바이스</span> : 가로 해상도가 576px 보다 작은 모든 디바이스를 기본으로 CSS를 작성합니다.  
 <span class="gray">모바일 디바이스</span> : 가로 해상도가 576px 보다 크고 767px보다 작은 모바일 디바이스에 대한 CSS를 작성합니다.  
 <span class="gray">태블릿 디바이스</span> : 가로 해상도가 768px 보다 크고 991px보다 작은 테블릿 디바이스에 대한 CSS를 작성합니다.  
 <span class="gray">데스크탑</span> : 가로 해상도가 992px 보다 큰고 1199px보다 작은 데스크탑에 대한 CSS를 작성합니다.  
-<span class="gray">큰화면의 데스크탑</span> : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.  
+<span class="gray">큰화면의 데스크탑</span> : 가로 해상도가 1200px 보다 큰 경우의 데스크탑에 대한 CSS를 작성 합니다.
 
 <div class="code">
 <iframe width="100%" height="330" src="//jsfiddle.net/lsh58/7mnfa5qL/10/embedded/css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
