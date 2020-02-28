@@ -28,7 +28,7 @@ featured: true
 
 ## 호이스팅의 대상
 
-<span class="orange">var 변수 선언과 함수선언문에서만 호이스팅이 일어난다.</span>(var 변수/함수의 선언만 위로 끌어 올려지며, 할당은 끌어 올려지지 않는다.)<span class="redline">let/const 변수 선언과 함수표현식에서는 호이스팅이 발생하지 않는다.</span>
+<span class="orange">var 변수 선언과 함수선언문에서만 호이스팅이 일어난다.</span>(var 변수/함수의 선언만 위로 끌어 올려지며, 할당은 끌어 올려지지 않는다.)<span class="redline"> let/const 변수 선언과 함수표현식에서는 호이스팅이 발생하지 않는다.</span>
 
 호이스팅은 함수선언문과 함수표현식에서 서로 다르게 동작하기 때문에 주의해야 한다.  
 변수에 할당된 함수표현식은 끌어 올려지지 않기 때문에 이때는 변수의 스코프 규칙을 그대로 따른다.
@@ -37,7 +37,7 @@ featured: true
 <iframe width="100%" height="300" src="//jsfiddle.net/lsh58/9ztmj0cq/31/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 </div>
 
-**함수선언문과 함수표현식**
+  **함수선언문과 함수표현식**
 
 <span class="gray">함수선언문 (Function Declaration)</span>  
 일반적인 프로그래밍 언어에서의 함수 선언과 비슷한 형식
