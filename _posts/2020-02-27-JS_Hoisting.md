@@ -18,11 +18,9 @@ featured: true
 
 # 호이스팅(Hoisting)
 
-자바스크립트 함수는 실행되기 전에 함수 안에 필요한 변수값들을 모두 모아서 유효 범위의 최상단에 선언한다.  
+자바스크립트 함수는 실행되기 전에 함수 안에 필요한 변수값들을 모두 모아서 유효 범위(함수 블록 {} 안에서 유효)의 최상단에 선언한다.  
 자바스크립트 Parser가 함수 실행 전 해당 함수를 한 번 훑는다.  
 함수 안에 존재하는 변수/함수선언에 대한 정보를 기억하고 있다가 실행시킨다.  
-
-<span class="gray">유효 범위</span>: 함수 블록 {} 안에서 유효  
 
 즉, <span class="orange">함수 내에서 아래쪽에 존재하는 내용 중 필요한 값들을 끌어올리는 것이다.</span>  
 실제로 코드가 끌어올려지는 건 아니며, 자바스크립트 Parser 내부적으로 끌어올려서 처리하는 것이다.
@@ -36,6 +34,10 @@ var 변수/함수의 선언만 위로 끌어 올려지며, 할당은 끌어 올�
 
 호이스팅은 함수선언문과 함수표현식에서 서로 다르게 동작하기 때문에 주의해야 한다.  
 변수에 할당된 함수표현식은 끌어 올려지지 않기 때문에 이때는 변수의 스코프 규칙을 그대로 따른다.
+
+<iframe width="100%" height="300" src="//jsfiddle.net/lsh58/9ztmj0cq/31/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+**함수선언문과 함수표현식**
 
 <span class="gray">함수선언문 (Function Declaration)</span>
 일반적인 프로그래밍 언어에서의 함수 선언과 비슷한 형식
