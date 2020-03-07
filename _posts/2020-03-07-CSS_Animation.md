@@ -30,7 +30,8 @@ animation 속성도 transition 과 유사하게 단일속성과 속기형으로 
 animation 은 위에서 언급했듯이 animation-* 속성과 애니메이션의 중간상태를 정의할 수 있는 @keyframes 으로 구성되어 있습니다.
 
 <span class="orange">animation-name</span>  
-애니메이션의 중간 상태를 지정하기 위한 이름을 정의합니다. 중간 상태는 @keyframes 규칙을 이용하여 기술합니다.  
+애니메이션의 중간 상태를 지정하기 위한 이름을 정의합니다.  
+중간 상태는 @keyframes 규칙을 이용하여 기술합니다.  
 애니메이션 이름을 none 으로 작성하면 애니메이션을 재생하지 않는다.  
 설령 none 이라는 이름의 @keyframes 속성이 있어도 애니메이션을 재생하지 않는다.  
 
@@ -44,8 +45,7 @@ animation 은 위에서 언급했듯이 animation-* 속성과 애니메이션의
 <span class="gray">now</span> :속성을 적용하자마자 애니메이션을 시작한다. 0으로 설정한 것과 같다. iOS2.0부터 사용할 수 있다.  
 <span class="gray">숫자와 단위</span> : 설정한 시간이 지난 뒤에 애니메이션을 시작한다.  
 사용할 수 있는 단위는 초(s)와 밀리초 (ms)다. 값이 양수면 속성을 적용한 순간부터 시간을 계산해 애니메이션 재생을 지연한다.  
-값이 음수면 속성을 적용한 순간 바로 애니메이션을 실행하지만, 지정한 시간이 지난 뒤의 장면부터 애니메이션을 재생한다.  
-예를 들어, 값이 ‘-1s’면 1초가 지난 뒤의 장면부터 애니메이션을 재생한다.
+값이 음수면 속성을 적용한 순간 바로 애니메이션을 실행하지만, 지정한 시간이 지난 뒤의 장면부터 애니메이션을 재생한다. 예를 들어, 값이 ‘-1s’면 1초가 지난 뒤의 장면부터 애니메이션을 재생한다.
 
 <span class="orange">animation-direction</span>  
 애니메이션이 종료되고 다시 처음부터 시작할지 역방향으로 진행할지 지정합니다.  
@@ -62,7 +62,7 @@ animation 은 위에서 언급했듯이 animation-* 속성과 애니메이션의
 
 <span class="orange">animation-play-state</span>  
 애니메이션을 멈추거나 다시 시작할 수 있습니다.  
-<span class="gray">running</span> : 애니메이션을 재생한다(기본값).
+<span class="gray">running</span> : 애니메이션을 재생한다(기본값).  
 <span class="gray">paused</span> : 애니메이션을 정지한다.
 
 <span class="orange">animation-timing-function</span>  
@@ -90,7 +90,7 @@ animation 은 위에서 언급했듯이 animation-* 속성과 애니메이션의
 ### @keyframes 과 animation 속기형
 애니메이션을 재생할 각 프레임의 스타일을 정의하는 것으로 from 속성이나 0% 속성에 설정한 스타일에서 출발해 to 속성이나 100% 속성에 설정한 스타일로 점차 바뀌면서 애니메이션이 재생됩니다.
 키프레임은 애니메이션을 적용할 요소의 animation-name 을 정의하고 그 키프레임 코드 블럭에 재생할 프레임별 시간 비율을 작성합니다.
-<span class="gray">from</span> : 애니메이션의 시작 프레임이다. 0% 와 같다.
+<span class="gray">from</span> : 애니메이션의 시작 프레임이다. 0% 와 같다.  
 <span class="gray">to</span> : 애니메이션의 마지막 프레임이다. 100% 와 같다.
 
 
