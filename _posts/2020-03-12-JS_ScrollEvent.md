@@ -29,5 +29,5 @@ featured: true
 ### 스크롤하면 화면을 원하는 위치까지 이동
 
 <div class="code">
-<iframe width="100%" height="300" src="//jsfiddle.net/lsh58/7ve6jxho/9/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="600" src="//jsfiddle.net/lsh58/degsj0zo/23/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 </div>
