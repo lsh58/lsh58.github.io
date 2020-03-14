@@ -104,10 +104,41 @@ BEM을 사용하면 수정(modifier) 클래스 이름은 요소(element) 이름 
 키-벨류 타입 : 키, 벨류를 하이픈으로 연결하여 표시합니다. (color-red, theme-ocean)  
 수식어는 단독으로 사용할 수 없다. 즉 기본 블록과 요소에 추가하여 사용해야 합니다. ( class=”block__element block__element — modifier”)
 
+### 클래스명 수정으로부터 JS연결을 보호하는 방법
 
+#### 1.js- 클래스 이름 사용
 
+이러한 버그를 완화하는 한 가지 방법은 문제의 DOM 요소(element)와의 관계를 나타 내기 위해 js-* 클래스 이름을 사용하는 것입니다.
+> <div class="site-navigation js-site-navigation"></div>
 
+규약에 따라js-site-navigation 클래스 이름을 보는 사람은 JavaScript 코드에서 DOM 요소(element)와 관계가 있음을 이해합니다.
 
+#### 2.Rel 속성(attribute) 사용
+기본적으로 rel 속성(attribute)은 링크 된 자원이 참조하는 문서와의 관계를 정의합니다.
+> <div class="site-navigation" rel="js-site-navigation"></div>
+> const nav = document.querySelector("[rel='js-site-navigation']")
+
+#### 보너스 팁 : CSS 코멘트 추가 작성
+이것은 명명 규칙과는 아무런 관련이 없지만 시간을 절약 할 수 있습니다.
+많은 웹 개발자가 자바 스크립트 주석을 쓰지 않거나 몇 가지를 고집하지는 않지만 더 많은 CSS 주석을 작성해야한다고 생각합니다.
+CSS가 가장 우아한 "언어"가 아니기 때문에 잘 구성된 코드는 코드를 이해하려고 할 때 시간을 절약 할 수 있습니다.
+
+### 이점
+
+SASS의 부모참조자(&)와 같이쓰면 아주 좋습니다. 작성된 SASS에서 요소를 쉽게 찾을 수 있습니다.
+예를 들어, .header 아래에 &__logo, &__search로 작성하기 때문에 "아, 저게 헤더 아래 로고고 저건 헤더 아래 검색이구나"란 걸 바로 알 수가 있습니다.
+> .header {
+>   &__nav {
+>      position: absolute;
+>   }
+>   &__list {
+>      clor: red;
+>   }
+
+### 단점
+클래스네임이 너무 길어서 HTML 마크업이 한눈에 들어오지 않는다는 단점이 있습니다.
+특히 스크립트로 modifier를 변경해야할 때, classList.add("block-name__element-name--modifier")처럼 길게 길게 작성해야하는 건 불편해보입니다.
+하이픈과 언더바가 혼재되어 있어, 더블클릭해서 클래스네임을 선택할때 한 번에 선택이 안 됩니다.
 
 Reference : [스키머(schemr)](https://medium.com/witinweb/css-%EB%B0%A9%EB%B2%95%EB%A1%A0-1-bem-block-element-modifier-1c03034e65a1)
 [Early adopter 의 디자인 번역 공장](https://www.vobour.com/-css-%EB%94%94%EB%B2%84%EA%B9%85-%EC%8B%9C%EA%B0%84%EC%9D%84-%EC%A0%88%EC%95%BD-%ED%95%A0-%EC%88%98%EC%9E%88%EB%8A%94-css-%EB%AA%85%EB%AA%85-%EA%B7%9C%EC%B9%99)
