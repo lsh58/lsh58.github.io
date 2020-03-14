@@ -46,6 +46,9 @@ BEM은 <span class="orange">Blcok</span>, <span class="orange">Element</span>, <
 ### Block
 
 ![image](https://github.com/lsh58/lsh58.github.io/blob/master/images/post/03.png?raw=true)
+
+> .stick-man { }
+
 BEM의 B는 'Block'을 의미합니다.  
 스틱 맨은 디자인 블록과 같은 구성 요소(component)를 나타냅니다.
 
@@ -64,6 +67,11 @@ BEM의 B는 'Block'을 의미합니다.
 ### Element
 
 ![image](https://github.com/lsh58/lsh58.github.io/blob/master/images/post/04.png?raw=true)
+
+>.stick-man__head {}
+>.stick-man__arms {}
+>.stick-man__feet {}
+
 'BEM'의 E는 요소(Elements)를 나타냅니다.  
 예를 들어, 스틱 맨은 head한 개, arms이 두 개, feet이 두 개 있습니다.  
 head, feet 및 arms은 구성 요소(component) 내의 모든 요소(elements)입니다.  
@@ -81,6 +89,10 @@ BEM 명명 규칙을 사용하면 요소(element) 이름 뒤에 2 개의 밑줄(
 ### Modifier
 
 ![image](https://github.com/lsh58/lsh58.github.io/blob/master/images/post/05.png?raw=true)
+
+>.stick-man--blue {}
+>.stick-man--red {}
+
 'BEM'의 M은 수정(Modifiers)의 약자입니다.  
 stick- man이 수정되고 blue 또는 red stick- man을 가질 수 있다면 어떨까요?  
 현실 세계에서는 red 단추 또는 blue 단추가 될 수 있습니다. 이것들은 해당 구성 요소(component)의 수정(modifications)입니다.  
