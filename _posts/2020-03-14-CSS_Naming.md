@@ -43,9 +43,9 @@ BEM은 <span class="orange">Blcok</span>, <span class="orange">Element</span>, <
 
 
 
-### Block
-
 ![image](https://github.com/lsh58/lsh58.github.io/blob/master/images/post/03.png?raw=true)
+
+### Block
 
 > .stick-man { }
 
@@ -64,9 +64,11 @@ BEM의 B는 'Block'을 의미합니다.
 블록은 서로 중첩해서 작성 할 수 있습니다.  
 예) header, menu, search-form ….
 
-### Element
+
 
 ![image](https://github.com/lsh58/lsh58.github.io/blob/master/images/post/04.png?raw=true)
+
+### Element
 
 >.stick-man__head {}
 >.stick-man__arms {}
@@ -86,9 +88,9 @@ BEM 명명 규칙을 사용하면 요소(element) 이름 뒤에 2 개의 밑줄(
 모든 블록에서 요소는 필수가 아닌 선택적으로 사용한다. 즉 블록안에 요소가 없을 수도 있습니다.  
 예) menu__item, header__title …
 
-### Modifier
-
 ![image](https://github.com/lsh58/lsh58.github.io/blob/master/images/post/05.png?raw=true)
+
+### Modifier
 
 >.stick-man--blue {}
 >.stick-man--red {}
