@@ -48,14 +48,14 @@ transition-timing-function 속성은 요소의 움직임 기능을 정의합니�
 <iframe width="100%" height="300" src="//jsfiddle.net/lsh58/o01zvauy/3/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 </div>
 
-<span class="orange">Date()</span>
-현재 시간정보를 가져옵니다.
-getSeconds();  현재 초
-getMinutes();  현재 분
-getHours();    현재 시간
+<span class="orange">Date()</span>  
+현재 시간정보를 가져옵니다.  
+getSeconds();  현재 초  
+getMinutes();  현재 분  
+getHours();    현재 시간  
 
-<span class="orange">1초당 움직일 각도구하기</span>
-초 : ((현재 초 / 60) * 360 )   + 90
-분 : ((현재 분 / 60) * 360 )  +  ((현재 초 / 60) * 6)   + 90
-시간 : ((현재 시간 / 60) * 360 ) + ((현재 분 / 60) * 30) + 90
+<span class="orange">1초당 움직일 각도구하기</span>  
+초 : ((현재 초 / 60) * 360 )   + 90  
+분 : ((현재 분 / 60) * 360 )  +  ((현재 초 / 60) * 6)   + 90  
+시간 : ((현재 시간 / 60) * 360 ) + ((현재 분 / 60) * 30) + 90  
 
