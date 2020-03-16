@@ -16,7 +16,7 @@ featured: true
 
 ---
 
-# JS30_Drum kit
+# JS30_02_JS and CSS clock
 
 ![image](https://github.com/lsh58/lsh58.github.io/blob/master/images/post/js30/j30-02_01.PNG?raw=true)
 
