@@ -21,7 +21,7 @@ featured: true
 CSS를 모듈 방식으로 코딩하여 중복을 최소화하는 기법  
 
 ## 주요원리
-<span class="redline">구조와 외양을 분리하자.</sapn>  
+<span class="redline">구조와 외양을 분리하자.</span>  
 외양(skin)으로 분리시켜, 결합시키면 다양한 결과물을 얻을 수 있음.  
 ```
 .button {
