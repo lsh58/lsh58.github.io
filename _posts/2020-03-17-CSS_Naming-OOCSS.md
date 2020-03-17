@@ -152,7 +152,7 @@ Grid를 사랑하는 습관을 갖자.
 CSS Lint를 사용해서 코드를 검사하자  
 구조와 스킨을 독립적으로 관리(위에서 설명)  
 컨테이너와 컨텐츠를 구분하자(위에서 설명)  
-Reset and fonts를 사용하자 (ex. YUI)  
+Reset and fonts를 사용하자 (ex. YUI) <http://yui.github.io/yui2/docs/yui_2.9.0_full/reset/index.html> 
 
 ## 나쁜 습관
 의존적인 스타일을 피하자(ex .class p{…} )  
