@@ -32,6 +32,10 @@ owner:
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:
+   provider: "google-gtag" # 구글 어날리틱스 등록 false (default), "google", "google-universal", "custom"
+   google:
+   tracking_id: "UA-161185949-1"
+   anonymize_ip: # true, false (default)	
 #google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
