@@ -5,7 +5,7 @@ description:
 headline:
 modified: 2020-03-17
 category: webdevelopment
-tags: [JS30]
+tags: [CSS]
 imagefeature:
 mathjax:
 chart:
