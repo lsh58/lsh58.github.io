@@ -26,11 +26,6 @@ featured: true
 ### 목표
 flex panel을 이용해 div 에 변화를 주어보자.
 
-*자바스크립트 코드
-<div class="code">
-<iframe width="100%" height="500" src="//jsfiddle.net/lsh58/0jxk6wr8/3/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-</div>
-
 공부한 내용(CSS)  
 
 <span class="orange">축약형 속성 flex</span>  
@@ -55,6 +50,10 @@ flex-basis 속성은 항목의 크기를 결정합니다. 이 속성의 기본�
 flex 항목에 크기가 지정되어 있지 않으면, flex 항목의 내용물 크기가 flex-basis 값으로 사용됩니다. 따라서 flex 컨테이너에서 display: flex 속성만을 지정하면 flex항목들이 각 내용물 크기만큼 공간을 차지하게 됩니다.
 
 
+*자바스크립트 코드
+<div class="code">
+<iframe width="100%" height="500" src="//jsfiddle.net/lsh58/0jxk6wr8/3/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+</div>
 
 <span class="orange">화살표함수</span>  
 
