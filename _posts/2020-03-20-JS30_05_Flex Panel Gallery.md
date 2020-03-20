@@ -26,10 +26,17 @@ featured: true
 ### 목표
 flex panel을 이용해 div 에 변화를 주어보자.
 
-공부한 내용(CSS)  
+### 공부한 내용(CSS)  
 
 <span class="orange">축약형 속성 flex</span>  
 
+flex 항목에 적용할 수 있는 속성은 다음과 같습니다.
+
+- flex-grow
+- flex-shrink
+- flex-basis
+
+500 픽셀의 크기를 갖는 flex 컨테이너 내에 100 픽셀 크기의 자식 세 개가 존재할 때, 사용가능한 공간 200 픽셀이 남게 됩니다. 기본적으로 flexbox는 이 공간을 마지막 자식 요소 다음에 빈공간으로 남겨둡니다.위의 세 가지 속성을 변경한다는 것은 flex 항목에게 사용가능한 공간을 분배하는 방식을 변경하는 것입니다. 사용가능한 공간 개념은 flex 항목을 정렬할 때 특히 중요합니다.  
 보통은 flex-grow, flex-shrink, flex-basis  값을 각각 사용하지 않고 이 세 속성을 한번에 지정하는 flex 축약형을 많이 사용합니다. flex 축약형의 값은 flex-grow, flex-shrink, flex-basis 순서로 지정됩니다.
 
 <span class="gray">flex-grow 속성</span>  
