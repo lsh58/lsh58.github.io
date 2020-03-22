@@ -60,8 +60,9 @@ flex-grow 와 flex-shrink의 값이 비율임을 유의하세요.  flex 항목�
 
 **알아낸것**  
 flex-shrink를 쓰려면,  
-1. 각각 사이즈가 없다면, 특정요소에만 shrink를 줘도 변하는것이 없다.  
-2. 각각 사이즈가 있다면, flex-shrink를 0을 갖는 요소는 나머지 요소들(flex-shrink값이 1인 요소들)이 다 줄어들때까지 사이즈가 줄어들지 않는다.
+1. 부모한테 사이즈가 없어야한다.
+2. 각각 사이즈가 없다면, 특정요소에만 shrink를 줘도 변하는것이 없다.  
+3. 각각 사이즈가 있다면, flex-shrink를 0을 갖는 요소는 나머지 요소들(flex-shrink값이 1인 요소들)이 다 줄어들때까지 사이즈가 줄어들지 않는다.
 
 
 <span class="gray">flex-basis 속성</span>  
