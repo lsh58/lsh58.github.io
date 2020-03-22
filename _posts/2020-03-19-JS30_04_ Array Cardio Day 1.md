@@ -28,7 +28,7 @@ featured: true
 
 *자바스크립트 코드
 <div class="code">
-<iframe width="100%" height="500" src="//jsfiddle.net/lsh58/0jxk6wr8/3/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="500" src="//jsfiddle.net/lsh58/p6gs81wt/1/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 </div>
 
 공부한 내용  
