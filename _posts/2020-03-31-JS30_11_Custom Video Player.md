@@ -3,7 +3,7 @@ layout: post
 title: "JS30_10_Hold Shift and Check Checkboxes"
 description:
 headline:
-modified: 2020-03-25
+modified: 2020-03-31
 category: webdevelopment
 tags: [JS30]
 imagefeature:
@@ -16,11 +16,13 @@ featured: true
 
 ---
 
-# JS30_10_Hold Shift and Check Checkboxes
+# JS30_11_Custom Video Player
+
+![image](https://github.com/lsh58/lsh58.github.io/blob/master/images/post/js30/j30-11_01.PNG?raw=true)
 
 *초기 코드(Type Aheady index-START.html)
 <div class="code">
-<iframe width="100%" height="400" src="//jsfiddle.net/lsh58/asej3v58/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/lsh58/56qzagrv/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 </div>
 
 ### 목표
