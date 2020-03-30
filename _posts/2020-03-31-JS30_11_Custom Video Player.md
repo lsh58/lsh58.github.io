@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JS30_10_Hold Shift and Check Checkboxes"
+title: "JS30_11_Custom Video Player"
 description:
 headline:
 modified: 2020-03-31
