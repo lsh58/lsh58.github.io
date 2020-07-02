@@ -61,7 +61,7 @@ jQuery의 DOM 조작 메서드는 신이 내린 선물이었고, 요상하기 �
 
 프레임워크에 의하여 별도로 정의된 컴포넌트 객체 덩어리의 전/후 변화를 비교(diff), 그리고 반드시 필요할 때에만 변화 내용을 DOM에 기록하기. 이런 접근법을 통하여 가상 DOM 접근법은 성능뿐만 아니라 유지보수성까지 향상시킨다고 증명되었다.
 
-
+![image](https://github.com/lsh58/lsh58.github.io/blob/master/images/post/React/virtualdom01.png)
 
 
 Reference : <https://ryublock.tistory.com/41>
