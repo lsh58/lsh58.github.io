@@ -64,6 +64,6 @@ jQuery의 DOM 조작 메서드는 신이 내린 선물이었고, 요상하기 �
 ![image](https://github.com/lsh58/lsh58.github.io/blob/master/images/post/React/virtualdom01.png?raw=true)
 
 
-Reference : <https://ryublock.tistory.com/41>
-<https://velog.io/@denny6389/React-%EA%B8%B0%EC%88%A0-%EB%AC%B8%EC%A0%9C>
+Reference : <https://ryublock.tistory.com/41>  
+<https://velog.io/@denny6389/React-%EA%B8%B0%EC%88%A0-%EB%AC%B8%EC%A0%9C>  
 <https://hashnode.com/post/the-one-thing-that-no-one-properly-explains-about-react-why-virtual-dom-cisczhfj41bmssp53mvfwmgrq>
